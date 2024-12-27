@@ -1,0 +1,79 @@
+.name{
+    background: var(--Gradient-text, linear-gradient(273deg, rgba(255, 0, 0, 0.80) 31.09%, rgba(180, 90, 171, 0.80) 54.73%, rgba(0, 213, 167, 0.80) 70.39%, rgba(6, 116, 183, 0.80) 90.73%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.services{
+    background: var(--Gradient-text, linear-gradient(273deg, rgba(255, 0, 0, 0.80) 31.09%, rgba(180, 90, 171, 0.80) 54.73%, rgba(0, 213, 167, 0.80) 70.39%, rgba(6, 116, 183, 0.80) 90.73%));
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.development{
+    background: linear-gradient(274deg, rgba(255, 0, 0, 0.80) 3.66%, rgba(180, 90, 171, 0.80) 24.59%, rgba(0, 213, 167, 0.80) 38.44%, rgba(6, 116, 183, 0.80) 56.44%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.case-study{
+    background: var(--Gradient-text, linear-gradient(90deg,#fff,#7B7B7B));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.case-1{
+    background: linear-gradient(90deg, #D6D6D6 0%, #FFFFFF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.verticals{
+    background: linear-gradient(273.05deg, rgba(255, 0, 0, 0.8) 6.38%, rgba(180, 90, 171, 0.8) 26.51%, rgba(0, 213, 167, 0.8) 39.83%, rgba(6, 116, 183, 0.8) 57.14%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.customers{
+    background: linear-gradient(273.32deg, rgba(255, 0, 0, 0.8) 31.09%, rgba(180, 90, 171, 0.8) 54.73%, rgba(0, 213, 167, 0.8) 70.39%, rgba(6, 116, 183, 0.8) 90.73%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.key{
+    background: linear-gradient(275.68deg, rgba(255, 0, 0, 0.8) , rgba(180, 90, 171, 0.8) , rgba(0, 213, 167, 0.8) , rgba(6, 116, 183, 0.8) );
+ 
+
+}
+
+.lifecycle{
+    background: linear-gradient(273.32deg, rgba(255, 0, 0, 0.8) 31.09%, rgba(180, 90, 171, 0.8) 54.73%, rgba(0, 213, 167, 0.8) 70.39%, rgba(6, 116, 183, 0.8) 90.73%);
+
+}
+.model{
+    background: linear-gradient(275.23deg, rgba(255, 0, 0, 0.8) 2.36%, rgba(180, 90, 171, 0.8) 18.99%, rgba(0, 213, 167, 0.8) 30.01%, rgba(6, 116, 183, 0.8) 44.3%);
+
+}
+.contact{
+    background: linear-gradient(274.79deg, rgba(255, 0, 0, 0.8) , rgba(180, 90, 171, 0.8) , rgba(0, 213, 167, 0.8) , rgba(6, 116, 183, 0.8) );
+
+}
+.us{
+    background: linear-gradient(91.96deg, #FFFFFF , #7B7B7B );
+
+}
+
+::-webkit-scrollbar{
+    width:none
+}
+
+.page5{
+background-color: linear-gradient(270.39deg, #FFFFFF 0.09%, #FF0000 8.5%, #0674B7 92.35%, #FFFFFF 99.34%),
+
+
+
+}
