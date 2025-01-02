@@ -78,13 +78,11 @@ background-color: linear-gradient(270.39deg, #FFFFFF 0.09%, #FF0000 8.5%, #0674B
 
 }
 
-.gradient-border{
-    border: 5px solid;
-    border-image: linear-gradient(270.39deg, #FFFFFF 0.09%, #FF0000 8.5%, #0674B7 92.35%, #FFFFFF 99.34%);
-
-
-
+.swiper-pagination-progressbar{
+    background-color: blue;
 }
-
+.swiper-pagination-progressbar-fill{
+    background-color: #FF0000;
+}
 
 
