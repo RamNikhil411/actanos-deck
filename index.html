@@ -11,13 +11,17 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <link rel="stylesheet" href="assets/styles/style.css">
-    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.18/dist/lenis.css">
+    
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
     <script src="assets/JS/tailwind.config.js"></script>
 </head>
 
-<body class="w-[1600vw] flex scrolling-section h-[100vh] overflow-hidden">
+<body class="">
 
-    <header class="fixed px-8 xl:px-10 2xl:px-12 py-5 3xl:py-16 lg:py-2 z-[1000] w-full ">
+    <header class="fixed px-8 xl:px-10 2xl:px-12 py-5 3xl:py-5 lg:py-2 z-[1000]  ">
         <div class="header ">
             <svg class="lg:w-40 xl:w-60 3xl:w-80 4xl:w-96" width="377" height="70" viewBox="0 0 377 70" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -40,42 +44,44 @@
 
         </div>
     </header>
-    <section class="h-[100vh] w-[100vw] ">
+    <div class="swiper deck">
+        <div class="swiper-wrapper">
+    <section class="swiper-slide h-screen bg-[url(assets/images/deck-bg.webp)] bg-cover bg-no-repeat bg-center relative ">
         <div
-            class="  py-5 px-8 xl:px-10 2xl:px-12 h-full bg-[url(assets/images/deck-bg.webp)] bg-cover bg-no-repeat bg-center">
+            class="   px-8 xl:px-10 2xl:px-12  ">
 
-            <div class="pt-[50vh] lg:pt-[40vh] xl:pt-[50vh]">
-                <div class="text-white font-satoshi text-xl xl:text-2xl 3xl:text-3xl 4xl:text-4xl">WE <span
+            <div class="py-24  pt-72 xl:py-28 2xl:py-32 3xl:py-[8vh] 4xl:py-[16vh] xl:pt-[25rem] 2xl:pt-80 3xl:pt-[55vh] 4xl:pt-[50rem] ">
+                <div class="text-white font-satoshi text-xl xl:text-2xl  3xl:text-3xl 4xl:text-4xl">WE <span
                         class="text-[#FF0000]">DESIGN</span> WE BUILD &
                     SCALE <span class="text-[#FF0000]">SOFTWARE</span> FOR </div>
                 <div
-                    class="text-7xl xl:text-8xl 3xl:text-9xl 4xl:text-[150px]  text-transparent font-satoshi bg-gradient-to-r from-[#fff] from-1.92% to-[#7B7B7B] to-95.96% w-fit bg-clip-text">
+                    class="text-7xl xl:text-8xl  3xl:text-9xl 4xl:text-[150px]  text-transparent font-satoshi bg-gradient-to-r from-[#fff] from-1.92% to-[#7B7B7B] to-95.96% w-fit bg-clip-text">
                     D2C Startups & <br>
                     Innovative Brands
                 </div>
 
             </div>
-            <div class="font-satoshi text-white flex justify-between pt-[7vh] xl:pt-[10vh] 3xl:pt-[12vh] 4xl:pt-[20vh]">
-                <div class="3xl:text-xl 4xl:text-3xl">
+            <div class="font-satoshi text-white flex justify-between absolute bottom-8 w-[95%] ">
+                <div class=" lg:text-xs text-sm 3xl:text-xl 4xl:text-3xl">
                     www.actanos.com
                 </div>
-                <div class="3xl:text-xl 4xl:text-3xl">
+                <div class="lg:text-xs text-sm 3xl:text-xl 4xl:text-3xl">
                     @2024 Actanos. All rights Reserved
                 </div>
             </div>
         </div>
     </section>
-    <section class="h-[100vh] bg-[url(assets/images/Page2.webp)] w-[100vw] bg-cover  bg-no-repeat ">
-        <div class="px-8 xl:px-10 2xl:px-12 3xl:px-16 4xl:px-20 grid grid-cols-2 gap-5 pt-[8vh] 3xl:pt-[16vh]">
+  <section class="swiper-slide h-screen bg-[url(assets/images/Page2.webp)]  bg-cover  bg-no-repeat ">
+        <div class="px-8 xl:px-10 2xl:px-12 3xl:px-16 4xl:px-20 grid grid-cols-2 gap-5 lg:pt-20 xl:pt-32 2xl:pt-20 3xl:pt-44">
             <div class="space-y-10 lg:space-y-6 3xl:space-y-14 ">
                 <div class="lg:space-y-2">
-                    <h1 class="font-satoshi text-6xl lg:text-5xl xl:text-5xl 3xl:text-7xl 4xl:text-9xl text-white text-opacity-70 ">About <span
+                    <h1 class="font-satoshi text-6xl lg:text-3xl xl:text-4xl 2xl:text-5xl 3xl:text-6xl 4xl:text-9xl text-white text-opacity-70 ">About <span
                             class="name">Actanos</span></h1>
-                    <p class="font-satoshi text-[#CFCFCF] xl:text-xl lg:text-base 3xl:text-3xl 4xl:text-4xl">We are a team of software developers
+                    <p class="font-satoshi text-[#CFCFCF] 2xl:text-base lg:text-base 3xl:text-xl 4xl:text-4xl">We are a team of software developers
                         based in
                         Hyderabad, India.</p>
                 </div>
-                <div class="bg-white bg-opacity-20 px-6 py-4 3xl:px-8 3xl:py-6 4xl:px-10 4xl:py-12 xl:space-y-3 lg:space-y-2 3xl:space-y-5 rounded-xl ">
+                <div class="bg-white bg-opacity-20 px-6 py-4 3xl:px- 6 3xl:py-3 4xl:px-10 4xl:py-12 xl:space-y-5 lg:space-y-2 3xl:space-y-6 rounded-xl ">
                     <div>
                         <svg class="w-14  4xl:w-24" width="68" height="68" viewBox="0 0 68 68" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -88,7 +94,7 @@
 
 
                     </div>
-                    <div class="text-white text-opacity-90 font-satoshi text-sm xl:text-lg 3xl:text-2xl 4xl:text-4xl 3xl:space-y-2 4xl:space-y-4">
+                    <div class="text-white text-opacity-90 font-satoshi text-sm xl:text-base 2xl:text-base 3xl:text-xl 4xl:text-4xl 3xl:space-y-1 4xl:space-y-4">
                         <h1>OUR STRENGTHS</h1>
                         <ul class="list-disc pl-5 4xl:pl-10">
                             <li>Comprehensive end-to-end technology solutions.</li>
@@ -96,38 +102,40 @@
                                 industry trend insights.</li>
                         </ul>
                     </div>
-                    <div class="text-sm  xl:text-lg 3xl:text-2xl 4xl:text-4xl 3xl:space-y-2 4xl:space-y-4">
+                    <div class="text-sm  xl:text-base 3xl:text-xl 2xl:text-base  4xl:text-4xl 3xl:space-y-1 4xl:space-y-4">
                         <h1 class="text-white text-opacity-90 font-satoshi">GUIDED BY OUR VALUES</h1>
                         <p class="text-white text-opacity-90 font-satoshi">We are driven by predictability, quality,
                             productivity,
                             and a commitment to cutting-edge technology and user experience.</p>
                     </div>
-                    <div class="text-sm xl:text-lg 3xl:text-2xl 4xl:text-4xl 3xl:space-y-2  4xl:space-y-4">
+                    <div class="text-sm xl:text-base 3xl:text-xl 2xl:text-base  4xl:text-4xl 3xl:space-y-1  4xl:space-y-4">
                         <h1 class="text-white text-opacity-90 font-satoshi">WHY US?</h1>
                         <p class="text-white text-opacity-90 font-satoshi">It's all about our team and culture. We are better
                             engineers, making us a better team.</p>
                     </div>
-                    <div class="text-sm xl:text-lg 3xl:text-2xl 4xl:text-4xl 3xl:space-y-2 4xl:space-y-4 ">
+                    <div class="text-sm xl:text-base 3xl:text-xl 2xl:text-base  4xl:text-4xl 3xl:space-y-1 4xl:space-y-4 ">
                         <h1 class="text-white text-opacity-90 font-satoshi">CULTURE OF EXCELLENCE</h1>
                         <p class="text-white text-opacity-90 font-satoshi">Our team's culture of excellence ensures predictable
                             outcomes, high-quality products, and continuous improvement.</p>
                     </div>
                 </div>
             </div>
-            <div class="flex flex-col  ">
+            <div class="flex flex-col items-center ">
+                <div class="mt-10">
                 <img src="assets/images/images.webp" alt=""
-                    class="w-[450px] lg:w-[300px] xl:w-[450px] 3xl:w-[600px] 4xl:w-[800px] self-center  mt-8 ml-20">
+                    class="w-[450px] lg:w-[350px] xl:w-[450px] 2xl:w-[400px] 3xl:w-[500px] 4xl:w-[800px]  ">
+                </div>
 
             </div>
         </div>
     </section>
-    <section class="h-[100vh] bg-[url(assets/images/page3/Page3.webp)] bg-center w-[100vw]  bg-cover bg-no-repeat ">
+    <section class="swiper-slide h-screen bg-[url(assets/images/page3/Page3.webp)] bg-center bg-cover bg-no-repeat ">
         <div class="px-8 xl:px-10 2xl:px-12 3xl:px-16 4xl:px-20  space-y-8 lg:space-y-4">
 
-            <div class="grid grid-cols-2 gap-16 lg:gap-6 xl:gap-10 lg:pt-28 3xl:gap-16  xl:pt-32 3xl:pt-44">
+            <div class="grid grid-cols-2 gap-16 lg:gap-6 xl:gap-10 lg:pt-28 3xl:gap-16 4xl:gap-24  xl:pt-32 3xl:pt-52">
                 <div class="space-y-14 lg:space-y-8 3xl:space-y-12 4xl:space-y-14">
                     <div class="space-y-3">
-                        <h3 class="font-satoshi text-white xl:text-xl 3xl:text-3xl 4xl:text-5xl lg:text-base">Transforming <span
+                        <h3 class="font-satoshi text-white xl:text-xl 3xl:text-3xl 4xl:text-4xl lg:text-base">Transforming <span
                                 class="text-[#FF0000]">D2C</span>
                             Startups and Visionary <span class="text-[#FF0000]">Brands</span> with</h3>
                         <h1 class="text-7xl font-satoshi text-white lg:text-5xl xl:text-6xl 3xl:text-8xl 4xl:text-9xl">Custom-Designed Software
@@ -175,23 +183,23 @@
                     </div>
                 </div>
                 <div>
-                    <div class="px-6 lg:px-3">
-                        <div class="space-y-3 lg:space-y-2 pb-4 lg:pb-2 3xl:pb-4 border-b border-opacity-50">
+                    <div class="px-6 lg:px-3 4xl:sapce-y-6">
+                        <div class="space-y-3 lg:space-y-2 4xl:space-y-4 pb-4 lg:pb-2 3xl:pb-4 border-b border-opacity-50">
                             <h3 class="text-white xl:text-xl font-satoshi lg:text-base 3xl:text-3xl 4xl:text-4xl"><span
                                     class="text-[#FF0000]">Proven</span>
                                 Heritage</h3>
                             <p
-                                class="font-satoshi text-white text-sm lg:text-[10px] xl:text-sm 3xl:text-lg 4xl:text-3xl text-white px-2 py-1 rounded-xl bg-[#] lg:px-3 ">
+                                class="font-satoshi text-white text-sm lg:text-[10px] xl:text-sm 3xl:text-lg 4xl:text-3xl text-white px-2 py-1 rounded-xl bg-[#] lg:px-3 4xl:leading-10 ">
                                 Formed by merging a mature domestic software
                                 services organization with a multinational software development group, bringing the best
                                 experience from both ecosystems into our operations.</p>
                         </div>
-                        <div class="space-y-3 lg:space-y-2 py-4 lg:py-2 3xl:py-4 border-b border-opacity-50">
+                        <div class="space-y-3 lg:space-y-2 4xl:space-y-4 py-4 lg:py-2 3xl:py-4 border-b border-opacity-50">
                             <h3 class="text-white xl:text-xl font-satoshi 3xl:text-3xl 4xl:text-4xl lg:text-base">Agile and <span
                                     class="text-[#FF0000]">Automated
                                 </span>Approach</h3>
                             <ul
-                                class="text-white font-satoshi list-disc px-6 lg:px-3 text-sm 3xl:text-lg 4xl:text-3xl lg:text-[10px] xl:text-sm text-white px-2 py-1 rounded-xl bg-[#]">
+                                class="text-white font-satoshi list-disc px-6 lg:px-3 text-sm 3xl:text-lg 4xl:text-3xl lg:text-[10px] xl:text-sm text-white px-2 py-1 rounded-xl 4xl:leading-10 ">
                                 <li>
                                     We leverage agile methodologies (Scrum, Kanban) and automation tools like ALM,
                                     continuous integration, and automated tests to ensure efficiency and quality.
@@ -202,12 +210,12 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="space-y-3 lg:space-y-2 py-4 lg:py-2  3xl:py-4 border-b border-opacity-50">
+                        <div class="space-y-3 lg:space-y-2 4xl:space-y-4 py-4 lg:py-2  3xl:py-4 border-b border-opacity-50">
                             <h3 class="text-white xl:text-xl font-satoshi 3xl:text-3xl 4xl:text-4xl lg:text-base">High-<span
                                     class="text-[#FF0000]">Quality</span>
                                 Products and <span class="text-[#FF0000]">Modern</span> Methodologies</h3>
                             <ul
-                                class="text-white font-satoshi list-disc px-6 lg:px-3  xl:text-sm 3xl:text-lg 4xl:text-3xl lg:text-[10px] text-white px-2 py-1 rounded-xl bg-[#]">
+                                class="text-white font-satoshi list-disc px-6 lg:px-3  xl:text-sm 3xl:text-lg 4xl:text-3xl lg:text-[10px] text-white px-2 py-1 rounded-xl 4xl:leading-10">
                                 <li>
                                     We focus on high availability and robust software products.
                                 </li>
@@ -221,12 +229,12 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="space-y-3 lg:space-y-2 py-4 lg:py-2 3xl:py-4 border-opacity-50">
+                        <div class="space-y-3 lg:space-y-2 4xl:space-y-4 py-4 lg:py-2 3xl:py-4 border-opacity-50">
                             <h3 class="text-white xl:text-xl font-satoshi 3xl:text-3xl 4xl:text-4xl lg:text-base">Future- <span
                                     class="text-[#FF0000]">Proof
                                 </span> Solutions</h3>
                             <p
-                                class="font-satoshi text-white xl:text-sm lg:text-[10px] 3xl:text-lg 4xl:text-3xl text-white px-2 py-1 rounded-xl bg-[#] lg:px-3 ">
+                                class="font-satoshi text-white xl:text-sm lg:text-[10px] 3xl:text-lg 4xl:text-3xl text-white px-2 py-1 rounded-xl 4xl:leading-10 lg:px-3 ">
                                 Where our past speaks for itself, our present is
                                 even better, and our future is mind-blowing. We are committed to delivering innovative
                                 solutions that meet the evolving needs of D2C startups and visionary brands.</p>
@@ -240,32 +248,32 @@
         </div>
 
     </section>
-    <section class="h-[100vh] bg-[url(assets/images/page4/Page4.webp)] bg-cover  bg-no-repeat w-[100vw]  ">
+    <section class="swiper-slide h-screen bg-[url(assets/images/page4/Page4.webp)] bg-cover  bg-no-repeat  ">
         <div class="px-8 xl:px-10 2xl:px-12">
 
             <div class="font-satoshi text-white lg:pt-[30vh] px-[6vh] xl:pt-[40vh]">
                 <div class="xl:text-xl lg:text-lg 3xl:text-3xl 4xl:text-5xl">What we do</div>
-                <div class="xl:text-7xl lg:text-5xl 3xl:text-8xl 4xl:text-[140px]">our</div>
-                <div class="xl:text-7xl lg:text-5xl 3xl:text-8xl 4xl:text-[140px] services w-[25%]">Services</div>
+                <div class="xl:text-7xl lg:text-5xl 3xl:text-9xl 4xl:text-[140px]">Our</div>
+                <div class="xl:text-7xl lg:text-5xl 3xl:text-9xl 4xl:text-[140px] services w-[30%]">Services</div>
             </div>
         </div>
 
     </section>
-    <!--5 page-->
-    <section class="bg-[url(assets/images/Page5.webp)] bg-cover bg-no-repeat w-[100vw]">
-        <div class="px-8 xl:px-10 2xl:px-12 3xl:px-14 4xl:px-16 mt-20 3xl:mt-40">
+    
+  <section class="swiper-slide h-screen bg-[url(assets/images/Page5.webp)] bg-cover bg-no-repeat ">
+        <div class="px-8 xl:px-10 2xl:px-12 3xl:px-14 4xl:px-16 pt-20 3xl:pt-16">
             <div>
                 <div class="flex justify-between items-center ">
                     <div>
                     <div class="w-fit bg-[#F85D3A] px-2 py-3 3xl:px-4 3xl:py-5 flex flex-col lg:gap-y-10 xl:gap-y-16 3xl:gap-y-24 4xl:gap-y-36 rounded-xl">
                         <div class="text-white font-satoshi text-sm self-center 3xl:text-xl 4xl:text-3xl text-center">Web Application <br> Development</div>
                         <div class="grid grid-cols-3 gap-2 3xl:gap-3">
-                            <div class="bg-white"><img src="assets/images/page5/webappp/Logo-1.svg" alt="" class="w-8 xl:w-12 3xl:w-20 4xl:w-28"></div>
-                            <div class="bg-white"><img src="assets/images/page5/webappp/Logo.svg" alt="" class="w-8 xl:w-12 3xl:w-20 4xl:w-28"></div>
-                            <div class="bg-white"><img src="assets/images/page5/webappp/vue-vuejs-javascript-js-framework 1.svg" alt="" class="w-8 xl:w-12 3xl:w-20 4xl:w-28">
+                            <div class="bg-white"><img src="assets/images/page5/webappp/Logo-1.svg" alt="" class="w-8 xl:w-12 3xl:w-14 4xl:w-28"></div>
+                            <div class="bg-white"><img src="assets/images/page5/webappp/Logo.svg" alt="" class="w-8 xl:w-12 3xl:w-14 4xl:w-28"></div>
+                            <div class="bg-white"><img src="assets/images/page5/webappp/vue-vuejs-javascript-js-framework 1.svg" alt="" class="w-8 xl:w-12 3xl:w-14 4xl:w-28">
                             </div>
-                            <div class="bg-white"><img src="assets/images/page5/webappp/tailwindcss-icon 1.svg" alt="" class="w-8 xl:w-12 3xl:w-20 4xl:w-28"></div>
-                            <div class="bg-white"><img src="assets/images/page5/webappp/cdnlogo.com_wordpress 1.svg" alt="" class="w-8 xl:w-12 3xl:w-20 4xl:w-28"></div>
+                            <div class="bg-white"><img src="assets/images/page5/webappp/tailwindcss-icon 1.svg" alt="" class="w-8 xl:w-12 3xl:w-14 4xl:w-28"></div>
+                            <div class="bg-white"><img src="assets/images/page5/webappp/cdnlogo.com_wordpress 1.svg" alt="" class="w-8 xl:w-12 3xl:w-14 4xl:w-28"></div>
                             <div class="bg-white text-black">+18</div>
 
                         </div>
@@ -275,10 +283,10 @@
                     <div class="w-fit bg-[#B377E8] px-2 py-3 3xl:px-4 3xl:py-5 flex flex-col lg:gap-y-14 xl:gap-y-16 3xl:gap-y-32 4xl:gap-y-40 rounded-xl">
                         <div class="text-white font-satoshi text-sm 3xl:text-xl 4xl:text-3xl self-center ">UX/UI Design</div>
                         <div class="grid grid-cols-3 gap-2 3xl:gap-3">
-                            <div class="bg-white"><img src="assets/images/page5/UIuxdesign/Frame 1923.svg" alt="" class="w-8 xl:w-12 3xl:w-20 4xl:w-28"></div>
-                            <div class="bg-white"><img src="assets/images/page5/UIuxdesign/Frame 1924.svg" alt="" class="w-8 xl:w-12 3xl:w-20 4xl:w-28"></div>
-                            <div class="bg-white"><img src="assets/images/page5/UIuxdesign/Frame 1925.svg" alt="" class="w-8 xl:w-12 3xl:w-20 4xl:w-28"></div>
-                            <div class="bg-white col-start-2 col-end-3"><img src="assets/images/page5/UIuxdesign/Frame 1926.svg" alt="" class="w-8 xl:w-12 3xl:w-20 4xl:w-28"></div>
+                            <div class="bg-white"><img src="assets/images/page5/UIuxdesign/Frame 1923.svg" alt="" class="w-8 xl:w-12 3xl:w-14 4xl:w-28"></div>
+                            <div class="bg-white"><img src="assets/images/page5/UIuxdesign/Frame 1924.svg" alt="" class="w-8 xl:w-12 3xl:w-14 4xl:w-28"></div>
+                            <div class="bg-white"><img src="assets/images/page5/UIuxdesign/Frame 1925.svg" alt="" class="w-8 xl:w-12 3xl:w-14 4xl:w-28"></div>
+                            <div class="bg-white col-start-2 col-end-3"><img src="assets/images/page5/UIuxdesign/Frame 1926.svg" alt="" class="w-8 xl:w-12 3xl:w-14 4xl:w-28"></div>
 
                         </div>
                     </div>
@@ -290,8 +298,8 @@
                     <div class="w-fit bg-[#FF0000] px-2 py-3 3xl:px-4 3xl:py-5 3xl:px-4 3xl:py-5 flex flex-col lg:gap-y-20 xl:gap-y-24 3xl:gap-y-40 4xl:gap-y-60 rounded-xl">
                         <div class="text-white font-satoshi text-sm 3xl:text-xl 4xl:text-3xl self-center text-center ">Desktop Application <br> Development</div>
                         <div class="grid grid-cols-2 gap-2 3xl:gap-3 lg:px-5 xl:px-7 3xl:px-12 ">
-                            <div class="bg-white"><img src="assets/images/page5/Desktop Application Development/Logo-1.svg" alt="" class="w-8 xl:w-12 3xl:w-20 4xl:w-28"></div>
-                            <div class="bg-white"><img src="assets/images/page5/Desktop Application Development/Logo.svg" alt="" class="w-8 xl:w-12 3xl:w-20 4xl:w-28"></div>
+                            <div class="bg-white"><img src="assets/images/page5/Desktop Application Development/Logo-1.svg" alt="" class="w-8 xl:w-12 3xl:w-14 4xl:w-28"></div>
+                            <div class="bg-white"><img src="assets/images/page5/Desktop Application Development/Logo.svg" alt="" class="w-8 xl:w-12 3xl:w-14 4xl:w-28"></div>
 
                         </div>
                     </div>
@@ -304,10 +312,10 @@
                     <div class="w-fit bg-white px-2 py-3 3xl:px-4 3xl:py-5 flex flex-col lg:gap-y-14 xl:gap-y-24 3xl:gap-y-32 4xl:gap-y-40 rounded-xl">
                         <div class=" font-satoshi text-sm 3xl:text-xl 4xl:text-3xl self-center text-center">Cloud Services</div>
                         <div class="grid grid-cols-2 gap-2 3xl:gap-3 px-5 xl:px-7 3xl:px-12 4xl:px-14">
-                         <div class="bg-white"><img src="assets/images/page5/cloud services/Logo-1.svg" alt="" class="w-8 xl:w-12 3xl:w-20 4xl:w-28"></div>
-                         <div class="bg-white"><img src="assets/images/page5/cloud services/Logo-2.svg" alt="" class="w-8 xl:w-12 3xl:w-20 4xl:w-28"></div>
-                         <div class="bg-white"><img src="assets/images/page5/cloud services/Logo-3.svg" alt="" class="w-8 xl:w-12 3xl:w-20 4xl:w-28"></div>
-                         <div class="bg-white"><img src="assets/images/page5/cloud services/Logo.svg" alt="" class="w-8 xl:w-12 3xl:w-20 4xl:w-28"></div>
+                         <div class="bg-white"><img src="assets/images/page5/cloud services/Logo-1.svg" alt="" class="w-8 xl:w-12 3xl:w-14 4xl:w-28"></div>
+                         <div class="bg-white"><img src="assets/images/page5/cloud services/Logo-2.svg" alt="" class="w-8 xl:w-12 3xl:w-14 4xl:w-28"></div>
+                         <div class="bg-white"><img src="assets/images/page5/cloud services/Logo-3.svg" alt="" class="w-8 xl:w-12 3xl:w-14 4xl:w-28"></div>
+                         <div class="bg-white"><img src="assets/images/page5/cloud services/Logo.svg" alt="" class="w-8 xl:w-12 3xl:w-14 4xl:w-28"></div>
 
                         </div>
                     </div>
@@ -316,9 +324,9 @@
                     <div class="w-fit bg-[#14AE5C] px-2 py-3 3xl:px-4 3xl:py-5 flex flex-col lg:gap-y-24 xl:gap-y-32 3xl:gap-y-52 4xl:gap-y-72 rounded-xl mt-10 4xl:mt-16">
                         <div class=" font-satoshi text-sm 3xl:text-xl 4xl:text-3xl self-center text-center text-white">Web Hosting</div>
                         <div class="grid grid-cols-3 gap-2 3xl:gap-3 ">
-                         <div class="bg-white"><img src="assets/images/page5/web-hosting/Logo-1.svg" alt="" class="w-8 xl:w-12 3xl:w-20 4xl:w-28"></div>
-                         <div class="bg-white"><img src="assets/images/page5/web-hosting/Logo-2.svg" alt="" class="w-8 xl:w-12 3xl:w-20 4xl:w-28"></div>
-                         <div class="bg-white"><img src="assets/images/page5/web-hosting/Logo.svg" alt="" class="w-8 xl:w-12 3xl:w-20 4xl:w-28"></div>
+                         <div class="bg-white"><img src="assets/images/page5/web-hosting/Logo-1.svg" alt="" class="w-8 xl:w-12 3xl:w-14 4xl:w-28"></div>
+                         <div class="bg-white"><img src="assets/images/page5/web-hosting/Logo-2.svg" alt="" class="w-8 xl:w-12 3xl:w-14 4xl:w-28"></div>
+                         <div class="bg-white"><img src="assets/images/page5/web-hosting/Logo.svg" alt="" class="w-8 xl:w-12 3xl:w-14 4xl:w-28"></div>
                          
 
                         </div>
@@ -328,10 +336,10 @@
                     <div class="w-fit bg-[#0674B7] px-2 py-3 3xl:px-4 3xl:py-5 flex flex-col lg:gap-y-10 xl:gap-y-16 3xl:gap-y-28 4xl:gap-y-40 rounded-xl">
                         <div class=" font-satoshi text-sm 3xl:text-xl 4xl:text-3xl self-center text-center text-white">Mobile App <br> Development</div>
                         <div class="grid grid-cols-3 gap-2  3xl:gap-3">
-                         <div class="bg-white"><img src="assets/images/page5/mobileappdevelopment/Logo-1.svg" alt="" class="w-8 xl:w-12 3xl:w-20 4xl:w-28"></div>
-                         <div class="bg-white"><img src="assets/images/page5/mobileappdevelopment/Logo-2.svg" alt="" class="w-8 xl:w-12 3xl:w-20 4xl:w-28"></div>
-                         <div class="bg-white"><img src="assets/images/page5/mobileappdevelopment/Logo-3.svg" alt="" class="w-8 xl:w-12 3xl:w-20 4xl:w-28"></div>
-                         <div class="bg-white col-start-2 col-end-2"><img src="assets/images/page5/mobileappdevelopment/Logo.svg" alt="" class="w-8 xl:w-12 3xl:w-20 4xl:w-28"></div>
+                         <div class="bg-white"><img src="assets/images/page5/mobileappdevelopment/Logo-1.svg" alt="" class="w-8 xl:w-12 3xl:w-14 4xl:w-28"></div>
+                         <div class="bg-white"><img src="assets/images/page5/mobileappdevelopment/Logo-2.svg" alt="" class="w-8 xl:w-12 3xl:w-14 4xl:w-28"></div>
+                         <div class="bg-white"><img src="assets/images/page5/mobileappdevelopment/Logo-3.svg" alt="" class="w-8 xl:w-12 3xl:w-14 4xl:w-28"></div>
+                         <div class="bg-white col-start-2 col-end-2"><img src="assets/images/page5/mobileappdevelopment/Logo.svg" alt="" class="w-8 xl:w-12 3xl:w-14 4xl:w-28"></div>
                          
 
                         </div>
@@ -345,9 +353,9 @@
 
 
     </section>
-    <!--6 page-->
-    <section class="h-[100vh] bg-[url(assets/images/page7/Page7.webp)] bg-no-repeat bg-cover   w-[100vw] ">
-        <div class="px-8 xl:px-10 2xl:px-12 3xl:px-16 4xl:px-20 xl:pt-32 lg:pt-20 3xl:pt-52">
+
+   <section class="swiper-slide h-screen bg-[url(assets/images/page7/Page7.webp)] bg-no-repeat bg-cover   ">
+        <div class="px-8 xl:px-10 2xl:px-12 3xl:px-16 4xl:px-20 xl:pt-32 lg:pt-20 3xl:pt-20">
 
 
             <div class="text-center">
@@ -358,10 +366,11 @@
 
             <div class="grid grid-cols-2 grid-rows-2 px-40 mt-5 gap-10 lg:gap-5 3xl:gap-6">
                 <div class="page5 ">
-                    <div class="bg-white bg-opacity-30 space-y-4 p-4 3xl:p-6 rounded-xl border-b-[5px]  section-6  3xl:space-y-8 ">
+                    <div class="bg-gradient-to-r from-blue-900 to-red-900 rounded-xl pb-[5px]">
+                    <div class="bg-gray-600 space-y-4 p-4 3xl:p-6 rounded-xl  section-6  3xl:space-y-8 ">
                         <div class="flex gap-1 items-start justify-start">
                             <span><img src="assets/images/maximize.svg" alt="" class="xl:w-6 3xl:w-8 4xl:w-10 lg:w-4"></span>
-                            <h4 class="text-white xl:text-lg lg:text-sm 3xl:text-3xl 4xl:text-5xl">Highly Scalable & Mission Critical Backend Apps
+                            <h4 class="text-white xl:text-lg lg:text-sm 3xl:text-2xl 4xl:text-5xl">Highly Scalable & Mission Critical Backend Apps
                             </h4>
                         </div>
                         <ul class="grid grid-cols-2 text-white gap-y-5 3xl:gap-y-8 ">
@@ -397,11 +406,13 @@
                             </li>
                         </ul>
                     </div>
+                    </div>
                 </div>
-                <div class="bg-white bg-opacity-30 space-y-4 p-4 3xl:p-6 rounded-xl border-b-[5px] 3xl:space-y-8 ">
+                <div class="bg-gradient-to-r from-blue-900 to-red-900 rounded-xl pb-[5px]">
+                <div class=" bg-gray-600 space-y-4 h-full 3xl:p-6 rounded-xl   ">
                     <div class="flex items-center gap-1">
                         <span><img src="assets/images/maximize.svg" alt="" class="xl:w-6 3xl:w-8 4xl:w-10 lg:w-4"></span>
-                        <h4 class="text-white xl:text-lg lg:text-sm 3xl:text-3xl 4xl:text-5xl">End To End Product Engineering</h4>
+                        <h4 class="text-white xl:text-lg lg:text-sm 3xl:text-2xl 4xl:text-5xl">End To End Product Engineering</h4>
                     </div>
                     <ul class="grid grid-cols-2 text-white gap-y-5 3xl:gap-y-8">
                         <li class="flex items-center gap-1 3xl:gap-2">
@@ -430,10 +441,12 @@
                         </li>
                     </ul>
                 </div>
-                <div class="bg-white bg-opacity-30 space-y-4 p-4 3xl:p-6 rounded-xl border-b-[5px] 3xl:space-y-8 ">
+                </div>
+                <div class="bg-gradient-to-r from-blue-900 to-red-900 rounded-xl pb-[5px]">
+                <div class="bg-gray-600 space-y-4 p-4 3xl:p-6 rounded-xl h-full 3xl:space-y-8 ">
                     <div class="flex items-center gap-1 3xl:gap-2">
                         <span><img src="assets/images/maximize.svg" alt="" class="xl:w-6 3xl:w-8 4xl:w-10 lg:w-4"></span>
-                        <h4 class="text-white xl:text-lg lg:text-base 3xl:text-3xl 4xl:text-5xl">Cloud Apps</h4>
+                        <h4 class="text-white xl:text-lg lg:text-base 3xl:text-2xl 4xl:text-5xl">Cloud Apps</h4>
                     </div>
                     <ul class="grid  text-white gap-y-5 3xl:gap-y-8 ">
                         <li class="flex items-center gap-1 3xl:gap-2">
@@ -452,10 +465,12 @@
 
                     </ul>
                 </div>
-                <div class="bg-white bg-opacity-30 space-y-4 p-4 3xl:p-6 rounded-xl border-b-[5px] 3xl:space-y-8 ">
+                </div>
+                <div class="bg-gradient-to-r from-blue-900 to-red-900 rounded-xl pb-[5px]">
+                <div class=" bg-gray-600 space-y-4 p-4 3xl:p-6 rounded-xl h-full 3xl:space-y-8 ">
                     <div class="flex items-center gap-1 ">
                         <span><img src="assets/images/maximize.svg" alt="" class="xl:w-6 3xl:w-8 4xl:w-10 lg:w-4"></span>
-                        <h4 class="text-white xl:text-lg lg:text-sm 3xl:text-3xl 4xl:text-5xl">Multiple Developement</h4>
+                        <h4 class="text-white xl:text-lg lg:text-sm 3xl:text-2xl 4xl:text-5xl">Multiple Developement</h4>
                     </div>
                     <ul class="grid grid-cols-2 text-white gap-y-5 3xl:gap-y-8">
                         <li class="flex items-center gap-1 3xl:gap-2">
@@ -496,6 +511,7 @@
                         </li>
                     </ul>
                 </div>
+                </div>
 
 
 
@@ -506,31 +522,31 @@
 
     </section>
     <!--7th page-->
-    <section
-        class="h-[100vh] bg-[url(assets/images/page7/Page7.webp)] bg-no-repeat bg-cover relative bg-center w-[100vw]  ">
+   <section
+        class="swiper-slide h-screen bg-[url(assets/images/page7/Page7.webp)] bg-no-repeat bg-cover relative bg-center   ">
         <div class="px-8 xl:px=10 2xl:px-12 ">
 
-            <div class="pt-[24vh]">
+            <div class="pt-[20vh]">
                 <div class="text-white font-satoshi lg:text-sm xl:text-base 3xl:text-2xl">Our Innovative</div>
-                <div class="font-satoshi case-study xl:text-5xl lg:text-4xl 3xl:text-7xl w-fit font-medium">Case Studies</div>
+                <div class="font-satoshi case-study xl:text-6xl lg:text-4xl 3xl:text-7xl 4xl:text-8xl w-fit font-medium">Case Studies</div>
             </div>
             <div class="grid grid-cols-3 gap-10 mt-10">
                 <div class="absolute left-0 bottom-0">
-                    <img src="assets/images/page7/image1.webp" alt="" class="xl:w-[400px] lg:w-[300px] 2xl:w-[470px] 3xl:w-[570px] 4xl:w-[800px]">
+                    <img src="assets/images/page7/image1.webp" alt="" class="w-[32vw]">
                 </div>
                 <div class="absolute   left-[33%] bottom-0">
-                    <img src="assets/images/page7/image3.webp" alt="" class="xl:w-[500px] lg:w-[400px] 2xl:w-[650px] 3xl:w-[800px] 4xl:w-[1000px] ">
+                    <img src="assets/images/page7/image3.webp" alt="" class="w-[45vw]">
                 </div>
                 <div class="absolute bottom-0 right-0">
-                    <img src="assets/images/page7/image2.webp" alt="" class="xl:w-80 lg:w-60 2xl:w-[340px] 3xl:w-[450px] 4xl:w-[670px]">
+                    <img src="assets/images/page7/image2.webp" alt="" class="w-[21vw]">
                 </div>
             </div>
         </div>
 
     </section>
     <!--8 section-->
-    <section
-        class="h-[100vh] bg-[url(assets/images/page7/Page7.webp)]  bg-no-repeat bg-cover relative bg-center w-[100vw] ">
+   <section
+        class="swiper-slide h-screen bg-[url(assets/images/page7/Page7.webp)]  bg-no-repeat bg-cover relative bg-center  ">
 
         <div class="px-8 xl:px-10 2xl:px-12 pt-10">
             <div class="flex justify-end">
@@ -543,19 +559,19 @@
                 </div>
             </div>
 
-            <div class="flex items-center justify-between  mt-5 xl:mt-10 3xl:mt-20 4xl:mt-32">
+            <div class="flex items-center justify-between  mt-5 xl:mt-10  4xl:mt-32">
                 <div class=" space-y-1 3xl:space-y-3">
-                    <div class="text-white font-satoshi text-xs xl:text-base 3xl:text-2xl 4xl:text-3xl">
+                    <div class="text-white font-satoshi text-xs xl:text-base  3xl:text-xl 4xl:text-3xl">
                         Eruvaka Technologies specializes in on-farm diagnostic <br> equipment for aquaculture farmers,
                         helping them reduce risks <br> and increase productivity.
                     </div>
                     <div class="flex flex-wrap gap-0.5 4xl:gap-2">
-                        <div class="text-[10px] xl:text-sm 3xl:text-base 4xl:text-xl text-white px-2 py-1 4xl:px-4 4xl:py-2  rounded-xl 4xl:rounded-full bg-[#F3ED32]">DynamoDB</div>
-                        <div class="text-[10px] xl:text-sm 3xl:text-base 4xl:text-xl text-white px-2 py-1 4xl:px-4 4xl:py-2  rounded-xl 4xl:rounded-full  bg-[#EC452E]">Glue</div>
-                        <div class="text-[10px] xl:text-sm 3xl:text-base 4xl:text-xl text-white px-2 py-1 4xl:px-4 4xl:py-2  rounded-xl 4xl:rounded-full  bg-[#49449C]">Pipelines</div>
-                        <div class="text-[10px] xl:text-sm 3xl:text-base 4xl:text-xl text-white px-2 py-1 4xl:px-4 4xl:py-2  rounded-xl 4xl:rounded-full  bg-[#399AC0]">S3 Data Lakes
+                        <div class="text-[10px] xl:text-sm 3xl:text-sm 4xl:text-xl text-white px-2 py-1 4xl:px-4 4xl:py-2  rounded-xl 4xl:rounded-full bg-[#F3ED32]">DynamoDB</div>
+                        <div class="text-[10px] xl:text-sm 3xl:text-sm 4xl:text-xl text-white px-2 py-1 4xl:px-4 4xl:py-2  rounded-xl 4xl:rounded-full  bg-[#EC452E]">Glue</div>
+                        <div class="text-[10px] xl:text-sm 3xl:text-sm 4xl:text-xl text-white px-2 py-1 4xl:px-4 4xl:py-2  rounded-xl 4xl:rounded-full  bg-[#49449C]">Pipelines</div>
+                        <div class="text-[10px] xl:text-sm 3xl:text-sm 4xl:text-xl text-white px-2 py-1 4xl:px-4 4xl:py-2  rounded-xl 4xl:rounded-full  bg-[#399AC0]">S3 Data Lakes
                         </div>
-                        <div class="text-[10px] xl:text-sm 3xl:text-base 4xl:text-xl text-white px-2 py-1 4xl:px-4 4xl:py-2  rounded-xl 4xl:rounded-full  bg-[#78338C]">Athena</div>
+                        <div class="text-[10px] xl:text-sm 3xl:text-sm 4xl:text-xl text-white px-2 py-1 4xl:px-4 4xl:py-2  rounded-xl 4xl:rounded-full  bg-[#78338C]">Athena</div>
 
 
 
@@ -563,11 +579,11 @@
                     <div class="flex 4xl:gap-2">
 
 
-                        <div class="text-[10px] xl:text-sm 3xl:text-base 4xl:text-xl text-white px-2 py-1 4xl:px-4 4xl:py-2 rounded-xl 4xl:rounded-full  bg-[#D9467A]">Quicksight
+                        <div class="text-[10px] xl:text-sm 3xl:text-sm 4xl:text-xl text-white px-2 py-1 4xl:px-4 4xl:py-2 rounded-xl 4xl:rounded-full  bg-[#D9467A]">Quicksight
                         </div>
-                        <div class="text-[10px] xl:text-sm 3xl:text-base 4xl:text-xl text-white px-2 py-1 4xl:px-4 4xl:py-2  rounded-xl 4xl:rounded-full  bg-[#049CE0]">API
+                        <div class="text-[10px] xl:text-sm 3xl:text-sm 4xl:text-xl text-white px-2 py-1 4xl:px-4 4xl:py-2  rounded-xl 4xl:rounded-full  bg-[#049CE0]">API
                             Optimization</div>
-                        <div class="text-[10px] xl:text-sm 3xl:text-base 4xl:text-xl text-white px-2 py-1 4xl:px-4 4xl:py-2  rounded-xl 4xl:rounded-full  bg-[#E6475D] ">Microservices
+                        <div class="text-[10px] xl:text-sm 3xl:text-sm 4xl:text-xl text-white px-2 py-1 4xl:px-4 4xl:py-2  rounded-xl 4xl:rounded-full  bg-[#E6475D] ">Microservices
                             and Serverless technologies</div>
 
                     </div>
@@ -580,7 +596,7 @@
                 <div class=> 
                     <div class="flex gap-2 3xl:gap-3 ">
                         <div class="bg-white bg-opacity-20 4xl:space-y-4 p-3 3xl:p-5 rounded-md">
-                            <h1 class="text-white xl:text-lg py-1 border-b font-medium pr-20 4xl:pr-16 lg:text-base 3xl:text-3xl 4xl:text-5xl">Industry</h1>
+                            <h1 class="text-white xl:text-lg py-1 border-b font-medium pr-20 4xl:pr-16 lg:text-base 3xl:text-2xl 4xl:text-5xl">Industry</h1>
                             <div class="space-y-1">
                                 <ul class="">
                                     <li class="text-white lg:text-sm xl:text-base 3xl:text-xl 4xl:text-3xl">Aquatech</li>
@@ -592,23 +608,23 @@
                             </div>
                         </div>
                         <div class="space-y-2 4xl:space-y-4 bg-white bg-opacity-20 p-3 3xl:p-5 4xl:p-8 rounded-md w-fit">
-                            <h1 class="font-satoshi xl:text-lg py-1 border-b font-medium text-white lg:text-base 3xl:text-3xl 4xl:text-5xl">
+                            <h1 class="font-satoshi xl:text-lg py-1 border-b font-medium text-white lg:text-base 3xl:text-2xl 4xl:text-5xl">
                                 Platfrom & Technologies
                             </h1>
                             <div class="flex flex-col gap-1 2xl:p-1">
                                 <div class="flex gap-1 2xl:gap-2 4xl:gap-3 p-1 border-b border-opacity-20 border-white">
-                                   <div class="2xl:px-1 border-r  border-opacity-20 border-white"><img src="assets/images/eruvaka/Node.js_logo.svg" alt="" class="xl:w-10 2xl:w-12 lg:w-8 3xl:w-20 4xl:w-24"></div>
+                                   <div class="2xl:px-1 border-r  border-opacity-20 border-white"><img src="assets/images/eruvaka/Node.js_logo.svg" alt="" class="xl:w-10 2xl:w-12 lg:w-8 3xl:w-14 4xl:w-24"></div>
                                     <div class="2xl:px-1 border-r  border-opacity-20 border-white"><img src="assets/images/eruvaka/Python-logo-notext.svg" alt=""
-                                        class="xl:w-10 2xl:w-12 lg:w-8 3xl:w-20 4xl:w-24"></div>
-                                    <div class="2xl:px-1 border-r  border-opacity-20 border-white"><img src="assets/images/eruvaka/mongodb.svg" alt="" class="xl:w-10 2xl:w-12 lg:w-8 3xl:w-20 4xl:w-24"></div>
-                                 <div class="px-1 border-r  border-opacity-20 border-white"><img src="assets/images/eruvaka/redis.svg" alt="" class="xl:w-10 2xl:w-12 lg:w-8 3xl:w-20 4xl:w-24"></div>
+                                        class="xl:w-10 2xl:w-12 lg:w-8 3xl:w-14 4xl:w-24"></div>
+                                    <div class="2xl:px-1 border-r  border-opacity-20 border-white"><img src="assets/images/eruvaka/mongodb.svg" alt="" class="xl:w-10 2xl:w-12 lg:w-8 3xl:w-14 4xl:w-24"></div>
+                                 <div class="px-1 border-r  border-opacity-20 border-white"><img src="assets/images/eruvaka/redis.svg" alt="" class="xl:w-10 2xl:w-12 lg:w-8 3xl:w-14 4xl:w-24"></div>
                                    <div class="2xl:px-1 border-r  border-opacity-20 border-white"><img src="assets/images/eruvaka/vue-vuejs-javascript-js-framework.svg" alt=""
-                                        class="xl:w-10 2xl:w-12 lg:w-8 3xl:w-20 4xl:w-24"></div>
+                                        class="xl:w-10 2xl:w-12 lg:w-8 3xl:w-14 4xl:w-24"></div>
                                 </div>
                                 <div class="flex gap-1 2xl:gap-2 4xl:gap-3 justify-center 2xl:p-1">
-                                   <div class="px-1 border-r  border-opacity-20 border-white"><img src="assets/images/eruvaka/aws.svg" alt="" class="xl:w-10 2xl:w-12 lg:w-8 3xl:w-20 4xl:w-24"></div>
-                                    <div class="px-1 border-r  border-opacity-20 border-white"><img src="assets/images/eruvaka/cloudflare.svg" alt="" class="xl:w-10 2xl:w-12 lg:w-8 3xl:w-20 4xl:w-24"></div>
-                                    <div><img src="assets/images/eruvaka/MySQL.svg" alt="" class="xl:w-10 2xl:w-12 lg:w-8 3xl:w-20 4xl:w-24"></div>
+                                   <div class="px-1 border-r  border-opacity-20 border-white"><img src="assets/images/eruvaka/aws.svg" alt="" class="xl:w-10 2xl:w-12 lg:w-8 3xl:w-14 4xl:w-24"></div>
+                                    <div class="px-1 border-r  border-opacity-20 border-white"><img src="assets/images/eruvaka/cloudflare.svg" alt="" class="xl:w-10 2xl:w-12 lg:w-8 3xl:w-14 4xl:w-24"></div>
+                                    <div><img src="assets/images/eruvaka/MySQL.svg" alt="" class="xl:w-10 2xl:w-12 lg:w-8 3xl:w-14 4xl:w-24"></div>
 
                                 </div>
                             </div>
@@ -623,7 +639,7 @@
                 <div class="challenges bg-[#250707] px-6 py-4  3xl:px-10 3xl:py-6 4xl:px-10 4xl:py-8 space-y-3  3xl:space-y-5 4xl:space-y-7 rounded-md">
                     <div class="flex justify-between">
                         <div
-                            class="bg-gradient-to-r from-[#FF6C4A] from-0% via-[#FDB914] via-[11.42%] to-[#FFA1D8] to-24.09% bg-clip-text text-transparent lg:text-lg xl:text-xl 3xl:text-4xl 4xl:text-6xl">
+                            class="bg-gradient-to-r from-[#FF6C4A] from-0% via-[#FDB914] via-[11.42%] to-[#FFA1D8] to-24.09% bg-clip-text text-transparent lg:text-lg xl:text-xl 3xl:text-3xl 4xl:text-6xl">
                             Challenges
                         </div>
                         <div>
@@ -636,8 +652,8 @@
                                 <img src="assets/images/downfall.svg" alt="" class="w-6 3xl:w-8 4xl:w-10">
                             </div>
                             <div class="space-y-1 3xl:space-y-2 4xl:space-y-4">
-                                <h3 class=" lg:text-sm xl:text-base 3xl:text-2xl 4xl:text-4xl">Slow Performance</h3>
-                                <p class=" font-thin text-[10px] xl:text-sm 3xl:text-xl 4xl:text-3xl">The PHP-based application was slow due to large amounts of
+                                <h3 class=" lg:text-sm xl:text-base 3xl:text-xl 4xl:text-4xl">Slow Performance</h3>
+                                <p class=" font-thin text-[10px] xl:text-sm 3xl:text-lg 4xl:text-3xl">The PHP-based application was slow due to large amounts of
                                     data from IoT devices.</p>
                             </div>
                         </li>
@@ -646,8 +662,8 @@
                                 <img src="assets/images/downfall.svg" alt="" class="w-6 3xl:w-8 4xl:w-10">
                             </div>
                             <div class="space-y-1 3xl:space-y-2 4xl:space-y-4">
-                                <h3 class=" text-sm xl:text-base 3xl:text-2xl 4xl:text-4xl">Data Management Issues</h3>
-                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-xl 4xl:text-3xl">Managing 2 TB of data was challenging, with a daily
+                                <h3 class=" text-sm xl:text-base 3xl:text-xl 4xl:text-4xl">Data Management Issues</h3>
+                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-lg 4xl:text-3xl">Managing 2 TB of data was challenging, with a daily
                                     throughput of 20 GB.</p>
                             </div>
                         </li>
@@ -656,8 +672,8 @@
                                 <img src="assets/images/downfall.svg" alt="" class="w-6 3xl:w-8 4xl:w-10">
                             </div>
                             <div class="space-y-1 3xl:space-y-2 4xl:space-y-4">
-                                <h3 class=" text-sm xl:text-base 3xl:text-2xl 4xl:text-4xl">Customer Issues</h3>
-                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-xl 4xl:text-3xl">Poor coding made it hard to identify and fix customer
+                                <h3 class=" text-sm xl:text-base 3xl:text-xl 4xl:text-4xl">Customer Issues</h3>
+                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-lg 4xl:text-3xl">Poor coding made it hard to identify and fix customer
                                     issues quickly.</p>
                             </div>
                         </li>
@@ -666,8 +682,8 @@
                                 <img src="assets/images/downfall.svg" alt="" class="w-6 3xl:w-8 4xl:w-10">
                             </div>
                             <div class="space-y-1 3xl:space-y-2 4xl:space-y-4">
-                                <h3 class=" text-sm xl:text-base 3xl:text-2xl 4xl:text-4xl">High Maintenance Costs</h3>
-                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-xl 4xl:text-3xl">Upgrading AWS resources instead of fixing coding issues
+                                <h3 class=" text-sm xl:text-base 3xl:text-xl 4xl:text-4xl">High Maintenance Costs</h3>
+                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-lg 4xl:text-3xl">Upgrading AWS resources instead of fixing coding issues
                                     led to high costs..</p>
                             </div>
                         </li>
@@ -676,8 +692,8 @@
                                 <img src="assets/images/downfall.svg" alt="" class="w-6 3xl:w-8 4xl:w-10">
                             </div>
                             <div class="space-y-1 3xl:space-y-2 4xl:space-y-4">
-                                <h3 class=" text-sm xl:text-base 3xl:text-2xl 4xl:text-4xl">UI/UX Challenges</h3>
-                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-xl 4xl:text-3xl">Farmers found it hard to understand the workflow due to
+                                <h3 class=" text-sm xl:text-base 3xl:text-xl 4xl:text-4xl">UI/UX Challenges</h3>
+                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-lg 4xl:text-3xl">Farmers found it hard to understand the workflow due to
                                     frequent new features.</p>
                             </div>
                         </li>
@@ -700,8 +716,8 @@
                                 <img src="assets/images/rocket.svg" alt="" class="w-6 3xl:w-8 4xl:w-12">
                             </div>
                             <div class="space-y-1 3xl:space-y-2 4xl:space-y-4">
-                                <h3 class=" text-sm xl:text-base 3xl:text-2xl 4xl:text-4xl">Performance Optimization</h3>
-                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-xl 4xl:text-3xl">Transitioned to a hybrid stack and used
+                                <h3 class=" text-sm xl:text-base 3xl:text-xl 4xl:text-4xl">Performance Optimization</h3>
+                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-lg 4xl:text-3xl">Transitioned to a hybrid stack and used
                                     microservices/serverless technologies to
                                     improve performance.</p>
                             </div>
@@ -711,8 +727,8 @@
                                 <img src="assets/images/rocket.svg" alt="" class="w-6 3xl:w-8 4xl:w-12">
                             </div>
                             <div class="space-y-1 3xl:space-y-2 4xl:space-y-4">
-                                <h3 class=" text-sm xl:text-base 3xl:text-2xl 4xl:text-4xl">Big Data Management</h3>
-                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-xl 4xl:text-3xl">Managing 2 TB of data was challenging, with a daily
+                                <h3 class=" text-sm xl:text-base 3xl:text-xl 4xl:text-4xl">Big Data Management</h3>
+                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-lg 4xl:text-3xl">Managing 2 TB of data was challenging, with a daily
                                     throughput of 20 GB..</p>
                             </div>
                         </li>
@@ -721,8 +737,8 @@
                                 <img src="assets/images/rocket.svg" alt="" class="w-6 3xl:w-8 4xl:w-12">
                             </div>
                             <div class="space-y-1 3xl:space-y-2 4xl:space-y-4">
-                                <h3 class=" text-sm xl:text-base 3xl:text-2xl 4xl:text-4xl">Improved Customer Support</h3>
-                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-xl 4xl:text-3xl">Enhanced coding practices helped developers resolve
+                                <h3 class=" text-sm xl:text-base 3xl:text-xl 4xl:text-4xl">Improved Customer Support</h3>
+                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-lg 4xl:text-3xl">Enhanced coding practices helped developers resolve
                                     customer issues faster.</p>
                             </div>
                         </li>
@@ -731,8 +747,8 @@
                                 <img src="assets/images/rocket.svg" alt="" class="w-6 3xl:w-8 4xl:w-12">
                             </div>
                             <div class="space-y-1 3xl:space-y-2 4xl:space-y-4">
-                                <h3 class=" text-sm xl:text-base 3xl:text-2xl 4xl:text-4xl">Cost Reduction</h3>
-                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-xl 4xl:text-3xl">Optimized architecture reduced AWS monthly bills.</p>
+                                <h3 class=" text-sm xl:text-base 3xl:text-xl 4xl:text-4xl">Cost Reduction</h3>
+                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-lg 4xl:text-3xl">Optimized architecture reduced AWS monthly bills.</p>
                             </div>
                         </li>
                         <li class="flex gap-1 4xl:gap-2">
@@ -740,8 +756,8 @@
                                 <img src="assets/images/rocket.svg" alt="" class="w-6 3xl:w-8 4xl:w-12">
                             </div>
                             <div class="space-y-1 3xl:space-y-2 4xl:space-y-4">
-                                <h3 class=" text-sm xl:text-base 3xl:text-2xl 4xl:text-4xl">Enhanced UI/UX</h3>
-                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-xl 4xl:text-3xl">Made the application more user-friendly for farmers by
+                                <h3 class=" text-sm xl:text-base 3xl:text-xl 4xl:text-4xl">Enhanced UI/UX</h3>
+                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-lg 4xl:text-3xl">Made the application more user-friendly for farmers by
                                     simplifying the application
                                     workflow</p>
                             </div>
@@ -757,12 +773,12 @@
 
     <!--9 section-->
     <section
-        class="h-[100vh] bg-[url(assets/images/page7/Page7.webp)] bg-no-repeat  bg-cover relative bg-center  w-[100vw] ">
+        class="swiper-slide h-screen bg-[url(assets/images/page7/Page7.webp)] bg-no-repeat  bg-cover relative bg-center   ">
 
         <div class="px-8 xl:px-10 2xl:px-12 pt-10">
             <div class="flex justify-end items-center">
 
-                <div class="-mt-5 3xl:mt-2">
+                <div class="-mt-5 ">
                     <div class="case-1 xl:text-lg px-2 lg:text-sm 3xl:text-3xl 4xl:text-4xl">
                         Case-study
                     </div>
@@ -772,24 +788,24 @@
 
             <div class="flex items-center justify-between   xl:gap-16 mt-5 xl:mt-10 3xl:mt-20 4xl:mt-32">
                 <div class=" space-y-1 3xl:space-y-3 ">
-                    <div class="text-white font-satoshi text-xs xl:text-base 3xl:text-2xl 4xl:text-3xl">
+                    <div class="text-white font-satoshi text-xs xl:text-base 3xl:text-xl 4xl:text-3xl">
                         A leading HRtech SaaS platform in the US and India aimed to <br> make level-one interviews
                         inclusive and fair. We collaborated <br> with this platform to address several key challenges
                         <br> and transform its product development process.
                     </div>
                     <div class="space-y-1">
                         <div class="flex flex-wrap gap-0.5">
-                            <div class="text-[10px] xl:text-sm 3xl:text-base 4xl:text-xl  text-white px-2 py-1  4xl:px-4 4xl:py-2  rounded-xl 4xl:rounded-full bg-[#1E6EB3]">Deepgram
+                            <div class="text-[10px] xl:text-sm 3xl:text-sm 4xl:text-xl  text-white px-2 py-1  4xl:px-4 4xl:py-2  rounded-xl 4xl:rounded-full bg-[#1E6EB3]">Deepgram
                                 API Integration</div>
-                            <div class="text-[10px] xl:text-sm 3xl:text-base 4xl:text-xl  text-white px-2 py-1  4xl:px-4 4xl:py-2  rounded-xl 4xl:rounded-full bg-[#F28531]">Google App
+                            <div class="text-[10px] xl:text-sm 3xl:text-sm 4xl:text-xl  text-white px-2 py-1  4xl:px-4 4xl:py-2  rounded-xl 4xl:rounded-full bg-[#F28531]">Google App
                                 runner</div>
                         </div>
                         <div class="flex  gap-0.5">
-                            <div class="text-[10px]  xl:text-sm 3xl:text-base 4xl:text-xl  text-white px-2 py-1  4xl:px-4 4xl:py-2  rounded-xl 4xl:rounded-full bg-[#45975E]">
+                            <div class="text-[10px]  xl:text-sm 3xl:text-sm 4xl:text-xl  text-white px-2 py-1  4xl:px-4 4xl:py-2  rounded-xl 4xl:rounded-full bg-[#45975E]">
                                 Microservice Architecture</div>
-                            <div class="text-[10px]  xl:text-sm 3xl:text-base 4xl:text-xl  text-white px-2 py-1  4xl:px-4 4xl:py-2  rounded-xl 4xl:rounded-full bg-[#F3ED32]">GEN AI
+                            <div class="text-[10px]  xl:text-sm 3xl:text-sm 4xl:text-xl  text-white px-2 py-1  4xl:px-4 4xl:py-2  rounded-xl 4xl:rounded-full bg-[#F3ED32]">GEN AI
                                 Solutions</div>
-                            <div class="text-[10px]  xl:text-sm 3xl:text-base 4xl:text-xl  text-white px-2 py-1 4xl:px-4 4xl:py-2  rounded-xl 4xl:rounded-full bg-[#FBC833]">Queue
+                            <div class="text-[10px]  xl:text-sm 3xl:text-sm 4xl:text-xl  text-white px-2 py-1 4xl:px-4 4xl:py-2  rounded-xl 4xl:rounded-full bg-[#FBC833]">Queue
                                 Services</div>
                         </div>
                     </div>
@@ -803,7 +819,7 @@
                 <div>
                     <div class="flex gap-2 ">
                         <div class="bg-white bg-opacity-20 rounded-md 4xl:space-y-4 p-3 3xl:p-5">
-                            <h1 class="text-white xl:text-lg py-1 border-b font-medium pr-10 lg:text-base 3xl:text-3xl 4xl:text-5xl">Industry</h1>
+                            <h1 class="text-white xl:text-lg py-1 border-b font-medium pr-10 lg:text-base 3xl:text-2xl 4xl:text-5xl">Industry</h1>
                             <div class="space-y-0.5 3xl:space-y-1">
                                 <ul class="list-disc px-3">
                                     <li class="text-white lg:text-sm xl:text-base 3xl:text-xl 4xl:text-3xl">HR Technology</li>
@@ -822,18 +838,18 @@
                             </h1>
                             <div class="flex flex-col gap-1">
                                 <div class="flex gap-1 4xl:gap-3 p-1 border-b border-white border-opacity-20">
-                                   <div class="p-1 border-r border-white border-opacity-20"> <img src="assets/images/Figlinks/Node.js_logo.svg" alt="" class="xl:w-10 2xl:w-12 lg:w-8 3xl:w-20 4xl:w-24"></div>
-                                   <div class="p-1 border-r  border-white border-opacity-20"> <img src="assets/images/Figlinks/react-2.svg" alt="" class="xl:w-10 2xl:w-12 lg:w-8 3xl:w-20 4xl:w-24"></div>
-                                   <div class="p-1 border-r  border-white border-opacity-20"> <img src="assets/images/Figlinks/ai.svg" alt="" class="xl:w-10 2xl:w-12 lg:w-8 3xl:w-20 4xl:w-24"></div>
-                                   <div class="p-1 border-r  border-white border-opacity-20"> <img src="assets/images/Figlinks/postgresql.svg" alt="" class="xl:w-10 2xl:w-12 lg:w-8 3xl:w-20 4xl:w-24"></div>
+                                   <div class="p-1 border-r border-white border-opacity-20"> <img src="assets/images/Figlinks/Node.js_logo.svg" alt="" class="xl:w-10 2xl:w-12 lg:w-8 3xl:w-14 4xl:w-24"></div>
+                                   <div class="p-1 border-r  border-white border-opacity-20"> <img src="assets/images/Figlinks/react-2.svg" alt="" class="xl:w-10 2xl:w-12 lg:w-8 3xl:w-14 4xl:w-24"></div>
+                                   <div class="p-1 border-r  border-white border-opacity-20"> <img src="assets/images/Figlinks/ai.svg" alt="" class="xl:w-10 2xl:w-12 lg:w-8 3xl:w-14 4xl:w-24"></div>
+                                   <div class="p-1 border-r  border-white border-opacity-20"> <img src="assets/images/Figlinks/postgresql.svg" alt="" class="xl:w-10 2xl:w-12 lg:w-8 3xl:w-14 4xl:w-24"></div>
                                    <div><img src="assets/images/Figlinks/tailwindcss-icon.svg" alt=""
                                         class="xl:w-10 lg:w-8 3xl:w-20 4xl:w-24"></div>
                                 </div>
                                 <div class="flex gap-2 4xl:gap-3 justify-center">
-                                   <div class="p-1 border-r  border-white border-opacity-20"> <img src="assets/images/Figlinks/redis.svg" alt="" class="xl:w-10 lg:w-8 3xl:w-20 4xl:w-24"></div>
-                                   <div class="p-1 border-r  border-white border-opacity-20">  <img src="assets/images/Figlinks/cloudflare.svg" alt="" class="xl:w-10 lg:w-8 3xl:w-20 4xl:w-24"></div>
-                                   <div class="p-1 border-r  border-white border-opacity-20"> <img src="assets/images/Figlinks/gemini.svg" alt="" class="xl:w-10 lg:w-8 3xl:w-20 4xl:w-24"></div>
-                                    <div class="p-1 border-r  border-white border-opacity-20"><img src="assets/images/Figlinks/chatGPT.svg" alt="" class="xl:w-10 lg:w-8 3xl:w-20 4xl:w-24"></div>
+                                   <div class="p-1 border-r  border-white border-opacity-20"> <img src="assets/images/Figlinks/redis.svg" alt="" class="xl:w-10 lg:w-8 3xl:w-14 4xl:w-24"></div>
+                                   <div class="p-1 border-r  border-white border-opacity-20">  <img src="assets/images/Figlinks/cloudflare.svg" alt="" class="xl:w-10 lg:w-8 3xl:w-14 4xl:w-24"></div>
+                                   <div class="p-1 border-r  border-white border-opacity-20"> <img src="assets/images/Figlinks/gemini.svg" alt="" class="xl:w-10 lg:w-8 3xl:w-14 4xl:w-24"></div>
+                                    <div class="p-1 border-r  border-white border-opacity-20"><img src="assets/images/Figlinks/chatGPT.svg" alt="" class="xl:w-10 lg:w-8 3xl:w-14 4xl:w-24"></div>
 
                                 </div>
                             </div>
@@ -845,24 +861,24 @@
             </div>
 
             <div class="grid grid-cols-2 h-[50vh] gap-5 mt-5">
-                <div class="challenges bg-[#250707]  px-6 py-4 3xl:px-10 3xl:py-6 4xl:px-10 4xl:py-8 space-y-3  3xl:space-y-5 4xl:space-y-7 rounded-md">
+                <div class="challenges bg-[#250707]  px-6 py-4 3xl:px-10 3xl:py-6 4xl:px-10 4xl:py-8 space-y-3  3xl:space-y-3 4xl:space-y-7 rounded-md">
                     <div class="flex justify-between">
                         <div
-                            class="bg-gradient-to-r from-[#FF6C4A] from-0% via-[#FDB914] via-[11.42%] to-[#FFA1D8] to-24.09% bg-clip-text text-transparent lg:text-lg xl:text-xl 3xl:text-4xl 4xl:text-6xl">
+                            class="bg-gradient-to-r from-[#FF6C4A] from-0% via-[#FDB914] via-[11.42%] to-[#FFA1D8] to-24.09% bg-clip-text text-transparent lg:text-lg xl:text-xl 3xl:text-3xl 4xl:text-6xl">
                             Challenges
                         </div>
                         <div>
                             <img src="assets/images/challenge.svg" alt="" class="w-5 xl:w-10  4xl:w-16">
                         </div>
                     </div>
-                    <ul class="text-white font-satoshi space-y-2  3xl:space-y-4 4xl:space-y-6">
+                    <ul class="text-white font-satoshi space-y-2  3xl:space-y-2 4xl:space-y-6">
                         <li class="flex gap-1 4xl:gap-2">
                             <div>
                                 <img src="assets/images/downfall.svg" alt="" class="w-6 3xl:w-8 4xl:w-12">
                             </div>
                             <div class="">
-                                <h3 class=" lg:text-sm xl:text-base 3xl:text-2xl 4xl:text-4xl">Unnatural Speech-to-Text Experience</h3>
-                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-xl 4xl:text-3xl">Users could quickly tell they were interacting with a bot.
+                                <h3 class=" lg:text-sm xl:text-base 3xl:text-xl 4xl:text-4xl">Unnatural Speech-to-Text Experience</h3>
+                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-lg 4xl:text-3xl">Users could quickly tell they were interacting with a bot.
                                 </p>
                             </div>
                         </li>
@@ -871,8 +887,8 @@
                                 <img src="assets/images/downfall.svg" alt="" class="w-6 3xl:w-8 4xl:w-12">
                             </div>
                             <div class="">
-                                <h3 class=" text-sm xl:text-base 3xl:text-2xl 4xl:text-4xl">Time-Consuming Data Processing</h3>
-                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-xl 4xl:text-3xl">Long processing times for interview data.</p>
+                                <h3 class=" text-sm xl:text-base 3xl:text-xl 4xl:text-4xl">Time-Consuming Data Processing</h3>
+                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-lg 4xl:text-3xl">Long processing times for interview data.</p>
                             </div>
                         </li>
                         <li class="flex gap-1  4xl:gap-2">
@@ -880,9 +896,9 @@
                                 <img src="assets/images/downfall.svg" alt="" class="w-6 3xl:w-8 4xl:w-12">
                             </div>
                             <div class="">
-                                <h3 class=" text-sm xl:text-base 3xl:text-2xl 4xl:text-4xl">Limited Flexibility for Premium Clients
+                                <h3 class=" text-sm xl:text-base 3xl:text-xl 4xl:text-4xl">Limited Flexibility for Premium Clients
                                 </h3>
-                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-xl 4xl:text-3xl">Inability to incorporate client updates.</p>
+                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-lg 4xl:text-3xl">Inability to incorporate client updates.</p>
                             </div>
                         </li>
                         <li class="flex gap-1  4xl:gap-2">
@@ -890,9 +906,9 @@
                                 <img src="assets/images/downfall.svg" alt="" class="w-6 3xl:w-8 4xl:w-12">
                             </div>
                             <div class="">
-                                <h3 class=" text-sm xl:text-base 3xl:text-2xl 4xl:text-4xl">User Intervention Required for Navigation
+                                <h3 class=" text-sm xl:text-base 3xl:text-xl 4xl:text-4xl">User Intervention Required for Navigation
                                 </h3>
-                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-xl 4xl:text-3xl">Users had to navigate through questions manually.</p>
+                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-lg 4xl:text-3xl">Users had to navigate through questions manually.</p>
                             </div>
                         </li>
                         <li class="flex gap-1  4xl:gap-2">
@@ -900,8 +916,8 @@
                                 <img src="assets/images/downfall.svg" alt="" class="w-6 3xl:w-8 4xl:w-12">
                             </div>
                             <div class="">
-                                <h3 class=" text-sm xl:text-base 3xl:text-2xl 4xl:text-4xl">Primitive UI/UX</h3>
-                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-xl 4xl:text-3xl">Basic and outdated user interface and experience.</p>
+                                <h3 class=" text-sm xl:text-base 3xl:text-xl 4xl:text-4xl">Primitive UI/UX</h3>
+                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-lg 4xl:text-3xl">Basic and outdated user interface and experience.</p>
                             </div>
                         </li>
                         <li class="flex gap-1  4xl:gap-2">
@@ -909,31 +925,31 @@
                                 <img src="assets/images/downfall.svg" alt="" class="w-6 3xl:w-8 4xl:w-12">
                             </div>
                             <div class="">
-                                <h3 class=" text-sm xl:text-base 3xl:text-2xl 4xl:text-4xl">Limited Analytics Capabilities</h3>
-                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-xl 4xl:text-3xl">Underutilization of GenAI solutions for analytics.</p>
+                                <h3 class=" text-sm xl:text-base 3xl:text-xl 4xl:text-4xl">Limited Analytics Capabilities</h3>
+                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-lg 4xl:text-3xl">Underutilization of GenAI solutions for analytics.</p>
                             </div>
                         </li>
                     </ul>
 
                 </div>
-                <div class="solutions bg-[#091E1C]  px-6 py-4 3xl:px-10 3xl:py-6 4xl:px-10 4xl:py-8 space-y-3  3xl:space-y-5 4xl:space-y-7 rounded-md ">
+                <div class="solutions bg-[#091E1C]  px-6 py-4 3xl:px-10 3xl:py-6 4xl:px-10 4xl:py-8 space-y-3  3xl:space-y-3 4xl:space-y-7 rounded-md ">
                     <div class="flex justify-between">
                         <div
-                            class="bg-gradient-to-r from-[#FF00DD] from-0% via-[#F5CF78] via-8.77% to-[#34A943] to-19.45% bg-clip-text text-transparent text-lg xl:text-xl 3xl:text-4xl 4xl:text-6xl">
+                            class="bg-gradient-to-r from-[#FF00DD] from-0% via-[#F5CF78] via-8.77% to-[#34A943] to-19.45% bg-clip-text text-transparent text-lg xl:text-xl 3xl:text-3xl 4xl:text-6xl">
                             Solutions
                         </div>
                         <div>
                             <img src="assets/images/mountain.svg" alt="" class="w-5 xl:w-10  4xl:w-16">
                         </div>
                     </div>
-                    <ul class="text-white font-satoshi   3xl:space-y-4 4xl:space-y-6 ">
+                    <ul class="text-white font-satoshi   3xl:space-y-2 4xl:space-y-6 ">
                         <li class="flex gap-1  4xl:gap-2">
                             <div>
                                 <img src="assets/images/rocket.svg" alt="" class="w-6 3xl:w-8 4xl:w-12">
                             </div>
                             <div class="">
-                                <h3 class=" text-sm xl:text-base 3xl:text-2xl 4xl:text-4xl">Enhance Speech-to-Text Experience</h3>
-                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-xl 4xl:text-3xl">Integrated Deepgram API for natural interactions.</p>
+                                <h3 class=" text-sm xl:text-base 3xl:text-xl 4xl:text-4xl">Enhance Speech-to-Text Experience</h3>
+                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-lg 4xl:text-3xl">Integrated Deepgram API for natural interactions.</p>
                             </div>
                         </li>
                         <li class="flex gap-1  4xl:gap-2">
@@ -941,8 +957,8 @@
                                 <img src="assets/images/rocket.svg" alt="" class="w-6 3xl:w-8 4xl:w-12">
                             </div>
                             <div class="">
-                                <h3 class=" text-sm xl:text-base 3xl:text-2xl 4xl:text-4xl">Optimize Data Processing</h3>
-                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-xl 4xl:text-3xl">Divided videos into chunks and used Google App Runner and
+                                <h3 class=" text-sm xl:text-base 3xl:text-xl 4xl:text-4xl">Optimize Data Processing</h3>
+                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-lg 4xl:text-3xl">Divided videos into chunks and used Google App Runner and
                                     serverless technologies.</p>
                             </div>
                         </li>
@@ -951,9 +967,9 @@
                                 <img src="assets/images/rocket.svg" alt="" class="w-6 3xl:w-8 4xl:w-12">
                             </div>
                             <div class="">
-                                <h3 class=" text-sm xl:text-base 3xl:text-2xl 4xl:text-4xl">Enhance Flexibility for Premium Clients
+                                <h3 class=" text-sm xl:text-base 3xl:text-xl 4xl:text-4xl">Enhance Flexibility for Premium Clients
                                 </h3>
-                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-xl 4xl:text-3xl">Implemented REST API and transitioned to microservice
+                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-lg 4xl:text-3xl">Implemented REST API and transitioned to microservice
                                     architecture. Applied DRY principles.</p>
                             </div>
                         </li>
@@ -962,8 +978,8 @@
                                 <img src="assets/images/rocket.svg" alt="" class="w-6 3xl:w-8 4xl:w-12">
                             </div>
                             <div class="space-y-1">
-                                <h3 class=" text-sm xl:text-base 3xl:text-2xl 4xl:text-4xl">Streamline User Navigation </h3>
-                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-xl 4xl:text-3xl">Detected pauses in responses and improved audio quality.
+                                <h3 class=" text-sm xl:text-base 3xl:text-xl 4xl:text-4xl">Streamline User Navigation </h3>
+                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-lg 4xl:text-3xl">Detected pauses in responses and improved audio quality.
                                 </p>
                             </div>
                         </li>
@@ -972,8 +988,8 @@
                                 <img src="assets/images/rocket.svg" alt="" class="w-6 3xl:w-8 4xl:w-12">
                             </div>
                             <div class="">
-                                <h3 class=" text-sm xl:text-base 3xl:text-2xl 4xl:text-4xl">Enhanced UI/UX</h3>
-                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-xl 4xl:text-3xl">Designed custom animations, established a color palette,
+                                <h3 class=" text-sm xl:text-base 3xl:text-xl 4xl:text-4xl">Enhanced UI/UX</h3>
+                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-lg 4xl:text-3xl">Designed custom animations, established a color palette,
                                     and implemented advanced front-end strategies.</p>
                             </div>
                         </li>
@@ -982,8 +998,8 @@
                                 <img src="assets/images/rocket.svg" alt="" class="w-6 3xl:w-8 4xl:w-12">
                             </div>
                             <div class="">
-                                <h3 class=" text-sm xl:text-base 3xl:text-2xl 4xl:text-4xl">Leverage GenAI Solutions</h3>
-                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-xl 4xl:text-3xl">Replaced the analytics engine with one powered by OpenAI,
+                                <h3 class=" text-sm xl:text-base 3xl:text-xl 4xl:text-4xl">Leverage GenAI Solutions</h3>
+                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-lg 4xl:text-3xl">Replaced the analytics engine with one powered by OpenAI,
                                     Gemini, and Olam.</p>
                             </div>
                         </li>
@@ -995,42 +1011,43 @@
         </div>
 
     </section>
-    <section
-        class="h-[100vh] bg-[url(assets/images/page7/Page7.webp)] bg-no-repeat bg-cover  relative bg-center  w-[100vw] ">
+
+   <section
+        class="swiper-slide h-screen bg-[url(assets/images/page7/Page7.webp)] bg-no-repeat bg-cover  relative bg-center  ">
 
         <div class="px-8 xl:px-10 2xl:px-12 pt-10">
             <div class="flex items-center justify-self-end  ">
 
                 <div class="justify-center ">
-                    <div class="case-1  -mt-5 3xl:mt-2 text-lg px-2 lg:text-sm xl:text-lg 3xl:text-3xl 4xl:text-4xl">
+                    <div class="case-1  -mt-5  text-lg px-2 lg:text-sm xl:text-lg 3xl:text-3xl 4xl:text-4xl">
                         Case-study
                     </div>
                     <div class="h-0.5 bg-white"></div>
                 </div>
             </div>
 
-            <div class="flex items-center justify-between mt-5 xl:mt-10 3xl:mt-20 4xl:mt-20 ">
+            <div class="flex items-center justify-between mt-5 xl:mt-10 3xl:mt-12 4xl:mt-20 ">
                 <div class=" space-y-1">
-                    <div class="text-white font-satoshi text-xs xl:text-base 3xl:text-2xl 4xl:text-3xl ">
+                    <div class="text-white font-satoshi text-xs xl:text-base 3xl:text-xl 4xl:text-3xl ">
                         A leading community-driven organization committed to fostering <br> thriving farms, preserving
                         the environment, and nurturing strong <br> communities, confronted substantial hurdles in
                         managing and <br> protecting natural resources.
                     </div>
                     <div class="space-y-1">
                         <div class="flex flex-wrap gap-0.5">
-                            <div class="text-[10px] xl:text-sm 3xl:text-base 4xl:text-xl  text-white px-2 py-1  4xl:px-4 4xl:py-2  rounded-xl 4xl:rounded-full bg-[#1E6EB3]">
+                            <div class="text-[10px] xl:text-sm 3xl:text-sm 4xl:text-xl  text-white px-2 py-1  4xl:px-4 4xl:py-2  rounded-xl 4xl:rounded-full bg-[#1E6EB3]">
                                 Environmental Awareness</div>
-                            <div class="text-[10px] xl:text-sm 3xl:text-base 4xl:text-xl  text-white px-2 py-1  4xl:px-4 4xl:py-2  rounded-xl 4xl:rounded-full bg-[#F3ED32]">Land Soil
+                            <div class="text-[10px] xl:text-sm 3xl:text-sm 4xl:text-xl  text-white px-2 py-1  4xl:px-4 4xl:py-2  rounded-xl 4xl:rounded-full bg-[#F3ED32]">Land Soil
                                 Care</div>
-                            <div class="text-[10px] xl:text-sm 3xl:text-base 4xl:text-xl  text-white px-2 py-1  4xl:px-4 4xl:py-2  rounded-xl 4xl:rounded-full bg-[#FBC833]">Geo fencing
+                            <div class="text-[10px] xl:text-sm 3xl:text-sm 4xl:text-xl  text-white px-2 py-1  4xl:px-4 4xl:py-2  rounded-xl 4xl:rounded-full bg-[#FBC833]">Geo fencing
                             </div>
                         </div>
                         <div class="flex  gap-0.5">
-                            <div class="text-[10px] xl:text-sm 3xl:text-base 4xl:text-xl  text-white px-2 py-1  4xl:px-4 4xl:py-2  rounded-xl 4xl:rounded-full bg-[#78C419]">Google Maps
+                            <div class="text-[10px] xl:text-sm 3xl:text-sm 4xl:text-xl  text-white px-2 py-1  4xl:px-4 4xl:py-2  rounded-xl 4xl:rounded-full bg-[#78C419]">Google Maps
                             </div>
-                            <div class="text-[10px] xl:text-sm 3xl:text-base 4xl:text-xl  text-white px-2 py-1  4xl:px-4 4xl:py-2  rounded-xl 4xl:rounded-full bg-[#49449C]">Google Maps
+                            <div class="text-[10px] xl:text-sm 3xl:text-sm 4xl:text-xl  text-white px-2 py-1  4xl:px-4 4xl:py-2  rounded-xl 4xl:rounded-full bg-[#49449C]">Google Maps
                                 Polygons</div>
-                            <div class="text-[10px] xl:text-sm 3xl:text-base 4xl:text-xl  text-white px-2 py-1  4xl:px-4 4xl:py-2  rounded-xl 4xl:rounded-full bg-[#D9467A]">whitelabel
+                            <div class="text-[10px] xl:text-sm 3xl:text-sm 4xl:text-xl  text-white px-2 py-1  4xl:px-4 4xl:py-2  rounded-xl 4xl:rounded-full bg-[#D9467A]">whitelabel
                                 solution</div>
                         </div>
                     </div>
@@ -1038,13 +1055,13 @@
                 </div>
                 <div class="-ml-10">
                     <div class="bg-white p-3 2xl:p-5 rounded-md">
-                        <img src="assets/images/case-study-logos/Land care.svg" alt="" class="w-16 xl:w-24 3xl:w-44">
+                        <img src="assets/images/case-study-logos/Land care.svg" alt="" class="w-16 xl:w-24 3xl:w-28">
                     </div>
                 </div>
                 <div>
                     <div class="flex gap-1 4xl:gap-2 ">
                         <div class="bg-white bg-opacity-20 p-3 rounded-md">
-                            <h1 class="text-white xl:text-lg py-1 border-b font-medium pr-10 lg:text-base 3xl:text-3xl 4xl:text-5xl">Industry</h1>
+                            <h1 class="text-white xl:text-lg py-1 border-b font-medium pr-10 lg:text-base 3xl:text-2xl 4xl:text-5xl">Industry</h1>
                             <div class="">
                                 <ul class=" px-3">
                                     <li class="text-white lg:text-sm xl:text-base 3xl:text-xl 4xl:text-3xl">Geo Care</li>
@@ -1057,19 +1074,19 @@
                             </div>
                         </div>
                         <div class="space-y-2 bg-white bg-opacity-20 p-3 rounded-md w-fit">
-                            <h1 class="font-satoshi xl:text-lg py-1 border-b font-medium text-white lg:text-base 3xl:text-3xl 4xl:text-5xl">
+                            <h1 class="font-satoshi xl:text-lg py-1 border-b font-medium text-white lg:text-base 3xl:text-2xl 4xl:text-5xl">
                                 Platfrom & Technologies
                             </h1>
                             <div class="flex flex-col gap-1 p-1">
-                                <div class="flex gap-1 p-1 border-b border-white border-opacity-20">
-                                    <div class="px-1 border-r border-white border-opacity-20"><img src="assets/images/landCare/Node.js_logo.svg" alt="" class="xl:w-10 lg:w-8 3xl:w-20 4xl:w-24"></div>
-                                   <div class=" px-1 border-r border-white border-opacity-20"> <img src="assets/images/landCare/react-2.svg" alt="" class="xl:w-10 lg:w-8 3xl:w-20 4xl:w-24"></div>
-                                   <div class="px-1 border-r border-white border-opacity-20"><img src="assets/images/landCare/postgresql.svg" alt="" class="xl:w-10 lg:w-8 3xl:w-20 4xl:w-24"></div>
-                                    <div class="px-1 border-r border-white border-opacity-20"><img src="assets/images/landCare/googlemap.svg" alt="" class="xl:w-10 lg:w-8 3xl:w-20 4xl:w-24"></div>
+                                <div class="flex gap-1 p-1 border-b border-white border-opacity-20 items-center">
+                                    <div class="px-1 border-r border-white border-opacity-20"><img src="assets/images/landCare/Node.js_logo.svg" alt="" class="xl:w-10 lg:w-8 3xl:w-14 4xl:w-24"></div>
+                                   <div class=" px-1 border-r border-white border-opacity-20"> <img src="assets/images/landCare/react-2.svg" alt="" class="xl:w-10 lg:w-8 3xl:w-14 4xl:w-24"></div>
+                                   <div class="px-1 border-r border-white border-opacity-20"><img src="assets/images/landCare/postgresql.svg" alt="" class="xl:w-10 lg:w-8 3xl:w-14 4xl:w-24"></div>
+                                    <div class="px-1 border-r border-white border-opacity-20"><img src="assets/images/landCare/googlemap.svg" alt="" class="xl:w-10 lg:w-8 3xl:w-14 4xl:w-24"></div>
                                     <div class="px-1"><img src="assets/images/landCare/cloudflare.svg" alt="" class="xl:w-10 lg:w-8 3xl:w-20 4xl:w-24"></div>
                                 </div>
                                 <div class="flex gap-2 justify-center">
-                                    <div class="px-1 "><img src="assets/images/Figlinks/redis.svg" alt="" class="xl:w-10 lg:w-8 3xl:w-20 4xl:w-24"></div>
+                                    <div class="px-1 "><img src="assets/images/Figlinks/redis.svg" alt="" class="xl:w-10 lg:w-8 3xl:w-14 4xl:w-24"></div>
 
                                 </div>
                             </div>
@@ -1084,7 +1101,7 @@
                 <div class="challenges bg-[#250707] px-6 py-4 3xl:px-10 3xl:py-6 4xl:px-10 4xl:py-8  space-y-3  3xl:space-y-5 4xl:space-y-7   rounded-md">
                     <div class="flex justify-between">
                         <div
-                            class="bg-gradient-to-r from-[#FF6C4A] from-0% via-[#FDB914] via-[11.42%] to-[#FFA1D8] to-24.09% bg-clip-text text-transparent lg:text-lg xl:text-xl 3xl:text-4xl 4xl:text-6xl">
+                            class="bg-gradient-to-r from-[#FF6C4A] from-0% via-[#FDB914] via-[11.42%] to-[#FFA1D8] to-24.09% bg-clip-text text-transparent lg:text-lg xl:text-xl 3xl:text-3xl 4xl:text-6xl">
                             Challenges
                         </div>
                         <div>
@@ -1097,8 +1114,8 @@
                                 <img src="assets/images/downfall.svg" alt="" class="w-6 3xl:w-8 4xl:w-12">
                             </div>
                             <div class="">
-                                <h3 class=" lg:text-sm  xl:text-base 3xl:text-2xl 4xl:text-4xl">Inefficient Data Management</h3>
-                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-xl 4xl:text-3xl">Entering data into Excel sheets for custom map preparation
+                                <h3 class=" lg:text-sm  xl:text-base 3xl:text-xl 4xl:text-4xl">Inefficient Data Management</h3>
+                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-lg 4xl:text-3xl">Entering data into Excel sheets for custom map preparation
                                     was time-consuming.</p>
                             </div>
                         </li>
@@ -1107,8 +1124,8 @@
                                 <img src="assets/images/downfall.svg" alt="" class="w-6 3xl:w-8 4xl:w-12">
                             </div>
                             <div class="">
-                                <h3 class=" text-sm  xl:text-base 3xl:text-2xl 4xl:text-4xl">Limited Customization</h3>
-                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-xl 4xl:text-3xl">Google Maps custom maps feature did not support custom
+                                <h3 class=" text-sm  xl:text-base 3xl:text-xl 4xl:text-4xl">Limited Customization</h3>
+                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-lg 4xl:text-3xl">Google Maps custom maps feature did not support custom
                                     data, including photos, videos, and text.</p>
                             </div>
                         </li>
@@ -1117,8 +1134,8 @@
                                 <img src="assets/images/downfall.svg" alt="" class="w-6 3xl:w-8 4xl:w-12">
                             </div>
                             <div class="">
-                                <h3 class=" text-sm  xl:text-base 3xl:text-2xl 4xl:text-4xl">Branding Limitations</h3>
-                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-xl 4xl:text-3xl">Custom branding was not possible within the existing
+                                <h3 class=" text-sm  xl:text-base 3xl:text-xl 4xl:text-4xl">Branding Limitations</h3>
+                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-lg 4xl:text-3xl">Custom branding was not possible within the existing
                                     mapping solution.</p>
                             </div>
                         </li>
@@ -1127,9 +1144,9 @@
                                 <img src="assets/images/downfall.svg" alt="" class="w-6 3xl:w-8 4xl:w-12">
                             </div>
                             <div class="">
-                                <h3 class=" text-sm  xl:text-base 3xl:text-2xl 4xl:text-4xl">User Intervention Required for Navigation
+                                <h3 class=" text-sm  xl:text-base 3xl:text-xl 4xl:text-4xl">User Intervention Required for Navigation
                                 </h3>
-                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-xl 4xl:text-3xl">Users had to navigate through questions manually.</p>
+                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-lg 4xl:text-3xl">Users had to navigate through questions manually.</p>
                             </div>
                         </li>
                         <li class="flex gap-1  4xl:gap-2">
@@ -1137,8 +1154,8 @@
                                 <img src="assets/images/downfall.svg" alt="" class="w-6 3xl:w-8 4xl:w-12">
                             </div>
                             <div class="">
-                                <h3 class=" text-sm  xl:text-base 3xl:text-2xl 4xl:text-4xl">Map Maintenance Challenges</h3>
-                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-xl 4xl:text-3xl">Maintaining hundreds of custom maps without a standard
+                                <h3 class=" text-sm  xl:text-base 3xl:text-xl 4xl:text-4xl">Map Maintenance Challenges</h3>
+                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-lg 4xl:text-3xl">Maintaining hundreds of custom maps without a standard
                                     dashboard was a significant hurdle.</p>
                             </div>
                         </li>
@@ -1147,8 +1164,8 @@
                                 <img src="assets/images/downfall.svg" alt="" class="w-6 3xl:w-8 4xl:w-12">
                             </div>
                             <div class="">
-                                <h3 class=" text-sm  xl:text-base 3xl:text-2xl 4xl:text-4xl">Filtering Limitations</h3>
-                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-xl 4xl:text-3xl">Filtering data inside the map was not customizable.</p>
+                                <h3 class=" text-sm  xl:text-base 3xl:text-xl 4xl:text-4xl">Filtering Limitations</h3>
+                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-lg 4xl:text-3xl">Filtering data inside the map was not customizable.</p>
                             </div>
                         </li>
                         <li class="flex gap-1  4xl:gap-2">
@@ -1156,8 +1173,8 @@
                                 <img src="assets/images/downfall.svg" alt="" class="w-6 3xl:w-8 4xl:w-12">
                             </div>
                             <div class="">
-                                <h3 class=" text-sm  xl:text-base 3xl:text-2xl 4xl:text-4xl">Selective Field Selection</h3>
-                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-xl 4xl:text-3xl">Choosing selective fields from existing Excel sheets was
+                                <h3 class=" text-sm  xl:text-base 3xl:text-xl 4xl:text-4xl">Selective Field Selection</h3>
+                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-lg 4xl:text-3xl">Choosing selective fields from existing Excel sheets was
                                     impossible.</p>
                             </div>
                         </li>
@@ -1180,8 +1197,8 @@
                                 <img src="assets/images/rocket.svg" alt="" class="w-6 3xl:w-8 4xl:w-12">
                             </div>
                             <div class="">
-                                <h3 class=" text-sm  xl:text-base 3xl:text-2xl 4xl:text-4xl">Efficient Data Management</h3>
-                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-xl 4xl:text-3xl">Implemented a database for managing map data, enabling
+                                <h3 class=" text-sm  xl:text-base 3xl:text-xl 4xl:text-4xl">Efficient Data Management</h3>
+                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-lg 4xl:text-3xl">Implemented a database for managing map data, enabling
                                     CRUD operations.</p>
                             </div>
                         </li>
@@ -1190,8 +1207,8 @@
                                 <img src="assets/images/rocket.svg" alt="" class="w-6 3xl:w-8 4xl:w-12">
                             </div>
                             <div class="">
-                                <h3 class=" text-sm  xl:text-base 3xl:text-2xl 4xl:text-4xl">Enhanced Customization</h3>
-                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-xl 4xl:text-3xl">Integrated Google Maps API into the application.
+                                <h3 class=" text-sm  xl:text-base 3xl:text-xl 4xl:text-4xl">Enhanced Customization</h3>
+                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-lg 4xl:text-3xl">Integrated Google Maps API into the application.
                                     Implemented an object storage solution to handle images and videos.</p>
                             </div>
                         </li>
@@ -1200,8 +1217,8 @@
                                 <img src="assets/images/rocket.svg" alt="" class="w-6 3xl:w-8 4xl:w-12">
                             </div>
                             <div class="">
-                                <h3 class=" text-sm  xl:text-base 3xl:text-2xl 4xl:text-4xl">Custom Branding</h3>
-                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-xl 4xl:text-3xl">Allowed users to define a color schema (theme) for custom
+                                <h3 class=" text-sm  xl:text-base 3xl:text-xl 4xl:text-4xl">Custom Branding</h3>
+                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-lg 4xl:text-3xl">Allowed users to define a color schema (theme) for custom
                                     maps using Google Maps API.</p>
                             </div>
                         </li>
@@ -1210,8 +1227,8 @@
                                 <img src="assets/images/rocket.svg" alt="" class="w-6 3xl:w-8 4xl:w-12">
                             </div>
                             <div class="">
-                                <h3 class=" text-sm  xl:text-base 3xl:text-2xl 4xl:text-4xl">Centralized Map Management</h3>
-                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-xl 4xl:text-3xl">Created a centralized dashboard to maintain data for all
+                                <h3 class=" text-sm  xl:text-base 3xl:text-xl 4xl:text-4xl">Centralized Map Management</h3>
+                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-lg 4xl:text-3xl">Created a centralized dashboard to maintain data for all
                                     custom maps.
                                     Implemented tagging and grouping of custom maps.</p>
                             </div>
@@ -1221,8 +1238,8 @@
                                 <img src="assets/images/rocket.svg" alt="" class="w-6 3xl:w-8 4xl:w-12">
                             </div>
                             <div class="">
-                                <h3 class=" text-sm  xl:text-base 3xl:text-2xl 4xl:text-4xl">Selective Field Selection</h3>
-                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-xl 4xl:text-3xl">The entire Excel sheet and its data are displayed during
+                                <h3 class=" text-sm  xl:text-base 3xl:text-xl 4xl:text-4xl">Selective Field Selection</h3>
+                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-lg 4xl:text-3xl">The entire Excel sheet and its data are displayed during
                                     the upload process.
                                     Enabled selecting required fields while uploading Excel sheets to the database.</p>
                             </div>
@@ -1237,13 +1254,13 @@
 
     </section>
     <section
-        class="h-[100vh] bg-[url(assets/images/page7/Page7.webp)] bg-no-repeat bg-cover relative bg-center  w-[100vw] ">
+        class=" swiper-slide h-screen bg-[url(assets/images/page7/Page7.webp)] bg-no-repeat bg-cover relative bg-center   ">
 
         <div class="px-8 xl:px-10 2xl:px-12">
             <div class="flex items-center justify-self-end pt-5">
 
                 <div class="justify-center items-center">
-                    <div class="case-1 3xl:mt-10  px-2 lg:text-sm xl:text-lg 3xl:text-3xl 4xl:text-4xl">
+                    <div class="case-1  px-2 lg:text-sm xl:text-lg 3xl:text-3xl 4xl:text-4xl">
                         Case-study
                     </div>
                     <div class="h-0.5 bg-white"></div>
@@ -1252,29 +1269,29 @@
 
             <div class="flex items-center  justify-between mt-5  xl:mt-10 3xl:mt-20 4xl:mt-20">
                 <div class=" space-y-1 shrink-1">
-                    <div class="text-white font-satoshi text-xs xl:text-base 3xl:text-2xl 4xl:text-3xl">
+                    <div class="text-white font-satoshi text-xs xl:text-base 3xl:text-xl 4xl:text-3xl">
                         A robotic Agritech company partnered with our team to develop a <br> comprehensive system that
                         streamlines farming operations by leveraging <br> precision equipment and intelligent robots.
                     </div>
                     <div class="space-y-1">
                         <div class="flex flex-wrap gap-0.5">
-                            <div class="text-[10px] xl:text-sm 3xl:text-base 4xl:text-xl  text-white px-2 py-1  4xl:px-4 4xl:py-2  rounded-xl 4xl:rounded-full  bg-[#1E6EB3]">Precision
+                            <div class="text-[10px] xl:text-sm 3xl:text-sm 4xl:text-xl  text-white px-2 py-1  4xl:px-4 4xl:py-2  rounded-xl 4xl:rounded-full  bg-[#1E6EB3]">Precision
                                 Spraying</div>
-                            <div class="text-[10px] xl:text-sm 3xl:text-base 4xl:text-xl  text-white px-2 py-1  4xl:px-4 4xl:py-2  rounded-xl 4xl:rounded-full bg-[#F28531]">Agri Tech
+                            <div class="text-[10px] xl:text-sm 3xl:text-sm 4xl:text-xl  text-white px-2 py-1  4xl:px-4 4xl:py-2  rounded-xl 4xl:rounded-full bg-[#F28531]">Agri Tech
                             </div>
-                            <div class="text-[10px] xl:text-sm 3xl:text-base 4xl:text-xl  text-white px-2 py-1  4xl:px-4 4xl:py-2  rounded-xl 4xl:rounded-full bg-[#45975E]">Image
+                            <div class="text-[10px] xl:text-sm 3xl:text-sm 4xl:text-xl  text-white px-2 py-1  4xl:px-4 4xl:py-2  rounded-xl 4xl:rounded-full bg-[#45975E]">Image
                                 Processing</div>
-                            <div class="text-[10px] xl:text-sm 3xl:text-base 4xl:text-xl  text-white px-2 py-1  4xl:px-4 4xl:py-2  rounded-xl 4xl:rounded-full bg-[#F3ED32]">Neural
+                            <div class="text-[10px] xl:text-sm 3xl:text-sm 4xl:text-xl  text-white px-2 py-1  4xl:px-4 4xl:py-2  rounded-xl 4xl:rounded-full bg-[#F3ED32]">Neural
                                 Networks</div>
                         </div>
                         <div class="flex  gap-0.5">
-                            <div class="text-[10px] xl:text-sm 3xl:text-base 4xl:text-xl  text-white px-2 py-1  4xl:px-4 4xl:py-2  rounded-xl 4xl:rounded-full bg-[#FBC833]">Embedded
+                            <div class="text-[10px] xl:text-sm 3xl:text-sm 4xl:text-xl  text-white px-2 py-1  4xl:px-4 4xl:py-2  rounded-xl 4xl:rounded-full bg-[#FBC833]">Embedded
                                 Systems</div>
-                            <div class="text-[10px] xl:text-sm 3xl:text-base 4xl:text-xl  text-white px-2 py-1  4xl:px-4 4xl:py-2  rounded-xl 4xl:rounded-full bg-[#78C419]">IOT</div>
-                            <div class="text-[10px] xl:text-sm 3xl:text-base 4xl:text-xl  text-white px-2 py-1  4xl:px-4 4xl:py-2  rounded-xl 4xl:rounded-full bg-[#49449C]">Controller
+                            <div class="text-[10px] xl:text-sm 3xl:text-sm 4xl:text-xl  text-white px-2 py-1  4xl:px-4 4xl:py-2  rounded-xl 4xl:rounded-full bg-[#78C419]">IOT</div>
+                            <div class="text-[10px] xl:text-sm 3xl:text-sm 4xl:text-xl  text-white px-2 py-1  4xl:px-4 4xl:py-2  rounded-xl 4xl:rounded-full bg-[#49449C]">Controller
                                 Apps</div>
-                            <div class="text-[10px] xl:text-sm 3xl:text-base 4xl:text-xl  text-white px-2 py-1  4xl:px-4 4xl:py-2  rounded-xl 4xl:rounded-full bg-[#399AC0]">MQTT</div>
-                            <div class="text-[10px] xl:text-sm 3xl:text-base 4xl:text-xl  text-white px-2 py-1  4xl:px-4 4xl:py-2  rounded-xl 4xl:rounded-full bg-[#78338C]">Kafka</div>
+                            <div class="text-[10px] xl:text-sm 3xl:text-sm 4xl:text-xl  text-white px-2 py-1  4xl:px-4 4xl:py-2  rounded-xl 4xl:rounded-full bg-[#399AC0]">MQTT</div>
+                            <div class="text-[10px] xl:text-sm 3xl:text-sm 4xl:text-xl  text-white px-2 py-1  4xl:px-4 4xl:py-2  rounded-xl 4xl:rounded-full bg-[#78338C]">Kafka</div>
 
                         </div>
                     </div>
@@ -1282,13 +1299,13 @@
                 </div>
                 <div class="-ml-10">
                     <div class="bg-white p-5 rounded-md">
-                        <img src="assets/images/case-study-logos/peepul agri.svg" alt="" class="w-20 xl:w-36 3xl:w-52 4xl:w-72">
+                        <img src="assets/images/case-study-logos/peepul agri.svg" alt="" class="w-20 xl:w-36 3xl:w-40 4xl:w-72">
                     </div>
                 </div>
                 <div>
                     <div class="flex gap-2 ">
                         <div class="bg-white bg-opacity-20 p-3 rounded-md 4xl:space-y-4 p-3 3xl:p-5">
-                            <h1 class="text-white lg:text-lg py-1 border-b font-medium pr-10 lg:text-base 3xl:text-3xl 4xl:text-5xl">Industry</h1>
+                            <h1 class="text-white lg:text-lg py-1 border-b font-medium pr-10 lg:text-base 3xl:text-2xl 4xl:text-5xl">Industry</h1>
                             <div class="space-y-0.5">
                                 <ul class="list-disc px-3 pl-6">
                                     <li class="text-white lg:text-sm xl:text-base 3xl:text-xl 4xl:text-3xl">Agri Tech</li>
@@ -1302,26 +1319,26 @@
                             </div>
                         </div>
                         <div class="space-y-2 bg-white bg-opacity-20 p-3 4xl:space-y-4 p-3 3xl:p-5 rounded-md w-fit">
-                            <h1 class="font-satoshi xl:text-lg py-1 border-b font-medium text-white lg:text-base 3xl:text-3xl 4xl:text-5xl">
+                            <h1 class="font-satoshi xl:text-lg py-1 border-b font-medium text-white lg:text-base 3xl:text-2xl 4xl:text-5xl">
                                 Platfrom & Technologies
                             </h1>
                             <div class="flex flex-col gap-1 4xl:gap-2 p-1">
                                 <div class="flex gap-1 p-1  border-b border-white border-opacity-20">
-                                    <div class="px-1 border-r border-white border-opacity-20"><img src="assets/images/peepulagri/Node.js_logo.svg" alt="" class="xl:w-10 lg:w-8 3xl:w-20 4xl:w-24"></div>
-                                   <div class="px-1 border-r border-white border-opacity-20"> <img src="assets/images/peepulagri/react-2.svg" alt="" class="xl:w-10 lg:w-8 3xl:w-20 4xl:w-24"></div>
+                                    <div class="px-1 border-r border-white border-opacity-20"><img src="assets/images/peepulagri/Node.js_logo.svg" alt="" class="xl:w-10 lg:w-8 3xl:w-14 4xl:w-24"></div>
+                                   <div class="px-1 border-r border-white border-opacity-20"> <img src="assets/images/peepulagri/react-2.svg" alt="" class="xl:w-10 lg:w-8 3xl:w-14 4xl:w-24"></div>
                                    <div class="px-1 border-r border-white border-opacity-20"> <img src="assets/images/peepulagri/Python-logo-notext.svg" alt=""
-                                        class="xl:w-10 lg:w-8 3xl:w-20 4xl:w-24"></div>
-                                   <div class="px-1 border-r border-white border-opacity-20"><img src="assets/images/peepulagri/apple.svg" alt="" class="xl:w-10 lg:w-8 3xl:w-20 4xl:w-24"></div> 
+                                        class="xl:w-10 lg:w-8 3xl:w-14 4xl:w-24"></div>
+                                   <div class="px-1 border-r border-white border-opacity-20"><img src="assets/images/peepulagri/apple.svg" alt="" class="xl:w-10 lg:w-8 3xl:w-14 4xl:w-24"></div> 
                                     <div class=""><img src="assets/images/peepulagri/microchip.svg" alt="" class="xl:w-10 lg:w-8 3xl:w-20 4xl:w-24"></div>
                                 </div>
                                 <div class="flex gap-1 justify-center 4xl:gap-2 p-1">
                                    <div class="px-1 border-r border-white border-opacity-20"> <img src="assets/images/peepulagri/raspberry-pi-logo.svg" alt=""
-                                        class="xl:w-10 lg:w-8 3xl:w-20 4xl:w-24"></div>
-                                    <div class="px-1 border-r border-white border-opacity-20"><img src="assets/images/peepulagri/mongodb.svg" alt="" class="xl:w-10 lg:w-8 3xl:w-20 4xl:w-24"></div>
+                                        class="xl:w-10 lg:w-8 3xl:w-14 4xl:w-24"></div>
+                                    <div class="px-1 border-r border-white border-opacity-20"><img src="assets/images/peepulagri/mongodb.svg" alt="" class="xl:w-10 lg:w-8 3xl:w-14 4xl:w-24"></div>
                                    <div class="px-1 border-r border-white border-opacity-20">  <img src="assets/images/peepulagri/postgresql-ar21.svg" alt=""
-                                        class="xl:w-10 lg:w-8 3xl:w-20 4xl:w-24"></div>
-                                    <div class="px-1 border-r border-white border-opacity-20"><img src="assets/images/peepulagri/redis.svg" alt="" class="xl:w-10 lg:w-8 3xl:w-20 4xl:w-24"></div>
-                                    <div class=""><img src="assets/images/peepulagri/cloudflare.svg" alt="" class="xl:w-10 lg:w-8 3xl:w-20 4xl:w-24"></div>
+                                        class="xl:w-10 lg:w-8 3xl:w-14 4xl:w-24"></div>
+                                    <div class="px-1 border-r border-white border-opacity-20"><img src="assets/images/peepulagri/redis.svg" alt="" class="xl:w-10 lg:w-8 3xl:w-14 4xl:w-24"></div>
+                                    <div class=""><img src="assets/images/peepulagri/cloudflare.svg" alt="" class="xl:w-10 lg:w-8 3xl:w-14 4xl:w-24"></div>
 
                                 </div>
                             </div>
@@ -1336,7 +1353,7 @@
                 <div class="challenges bg-[#250707] px-3 py-2 3xl:px-10 3xl:py-6 4xl:px-10 4xl:py-8 space-y-3  3xl:space-y-5 4xl:space-y-7  rounded-md">
                     <div class="flex justify-between">
                         <div
-                            class="bg-gradient-to-r from-[#FF6C4A] from-0% via-[#FDB914] via-[11.42%] to-[#FFA1D8] to-24.09% bg-clip-text text-transparent lg:text-lg xl:text-xl 3xl:text-4xl 4xl:text-6xl">
+                            class="bg-gradient-to-r from-[#FF6C4A] from-0% via-[#FDB914] via-[11.42%] to-[#FFA1D8] to-24.09% bg-clip-text text-transparent lg:text-lg xl:text-xl 3xl:text-3xl 4xl:text-6xl">
                             Challenges
                         </div>
                         <div>
@@ -1349,9 +1366,9 @@
                                 <img src="assets/images/downfall.svg" alt="" class="w-6 3xl:w-8 4xl:w-12">
                             </div>
                             <div class="space-y-1">
-                                <h3 class=" lg:text-sm xl:text-base 3xl:text-2xl 4xl:text-4xl">Inefficient Crop Analysis and Monitoring
+                                <h3 class=" lg:text-sm xl:text-base 3xl:text-xl 4xl:text-4xl">Inefficient Crop Analysis and Monitoring
                                 </h3>
-                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-xl 4xl:text-3xl">The client needed a systematic way to analyze crops in
+                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-lg 4xl:text-3xl">The client needed a systematic way to analyze crops in
                                     real-time, making monitoring and managing farm operations difficult.</p>
                             </div>
                         </li>
@@ -1360,8 +1377,8 @@
                                 <img src="assets/images/downfall.svg" alt="" class="w-6 3xl:w-8 4xl:w-12">
                             </div>
                             <div class="space-y-1">
-                                <h3 class=" text-sm xl:text-base 3xl:text-2xl 4xl:text-4xl">Limited Data Analysis Capabilities</h3>
-                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-xl 4xl:text-3xl">Agronomists needed better tools to analyze crop images,
+                                <h3 class=" text-sm xl:text-base 3xl:text-xl 4xl:text-4xl">Limited Data Analysis Capabilities</h3>
+                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-lg 4xl:text-3xl">Agronomists needed better tools to analyze crop images,
                                     create seasonal plans, and track operations.</p>
                             </div>
                         </li>
@@ -1370,8 +1387,8 @@
                                 <img src="assets/images/downfall.svg" alt="" class="w-6 3xl:w-8 4xl:w-12">
                             </div>
                             <div class="space-y-1">
-                                <h3 class=" text-sm xl:text-base 3xl:text-2xl 4xl:text-4xl">Disorganized Procurement Process</h3>
-                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-xl 4xl:text-3xl">The client needed help managing procurement plans,
+                                <h3 class=" text-sm xl:text-base 3xl:text-xl 4xl:text-4xl">Disorganized Procurement Process</h3>
+                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-lg 4xl:text-3xl">The client needed help managing procurement plans,
                                     tracking materials and labor, and controlling expenses.</p>
                             </div>
                         </li>
@@ -1380,8 +1397,8 @@
                                 <img src="assets/images/downfall.svg" alt="" class="w-6 3xl:w-8 4xl:w-12">
                             </div>
                             <div class="space-y-1">
-                                <h3 class=" text-sm xl:text-base 3xl:text-2xl 4xl:text-4xl">Lack of Real-Time Alerts and Support</h3>
-                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-xl 4xl:text-3xl">The client needed a real-time alert and reminder system to
+                                <h3 class=" text-sm xl:text-base 3xl:text-xl 4xl:text-4xl">Lack of Real-Time Alerts and Support</h3>
+                                <p class="font-thin text-[10px] xl:text-sm 3xl:text-lg 4xl:text-3xl">The client needed a real-time alert and reminder system to
                                     ensure timely actions and a better user experience.</p>
                             </div>
                         </li>
@@ -1394,7 +1411,7 @@
                 <div class="solutions bg-[#091E1C] px-3 py-2 3xl:px-10 3xl:py-6 4xl:px-10 4xl:py-8 space-y-3  3xl:space-y-5 4xl:space-y-7 pb-10">
                     <div class="flex justify-between">
                         <div
-                            class="bg-gradient-to-r from-[#FF00DD] from-0% via-[#F5CF78] via-8.77% to-[#34A943] to-19.45% bg-clip-text text-transparent text-lg xl:text-xl 3xl:text-4xl 4xl:text-6xl">
+                            class="bg-gradient-to-r from-[#FF00DD] from-0% via-[#F5CF78] via-8.77% to-[#34A943] to-19.45% bg-clip-text text-transparent text-lg xl:text-xl 3xl:text-3xl 4xl:text-6xl">
                             Solutions
                         </div>
                         <div>
@@ -1407,10 +1424,10 @@
                                 <img src="assets/images/rocket.svg" alt="" class="w-6 3xl:w-8 4xl:w-12">
                                 <div class="">
                                     <h3
-                                        class="font-satoshi text-sm  text-white text-lg 3xl:text-2xl 4xl:text-4xl xl:text-base">
+                                        class="font-satoshi text-sm  text-white text-lg 3xl:text-xl 4xl:text-4xl xl:text-base">
                                         Scouting and Monitoring</h3>
                                     <ul
-                                        class="text-white text-[10px] font-satoshi xl:text-sm list-disc ml-4 3xl:text-xl 4xl:text-3xl 3xl:space-y-1">
+                                        class="text-white text-[10px] font-satoshi xl:text-sm list-disc ml-4 3xl:text-lg 4xl:text-3xl 3xl:space-y-1">
                                         <li class="font-thin"><span class="font-normal">Farm Location Marking:</span> Used Google Maps
                                             polygons for accurate tracking</li>
                                         <li class="font-thin"><span class="font-normal">High-Resolution Image Capture:</span> Employed
@@ -1423,10 +1440,10 @@
                             <li class="flex items-start gap-2">
                                 <img src="assets/images/rocket.svg" alt="" class="w-6 3xl:w-8 4xl:w-12">
                                 <div class="">
-                                    <h3 class="font-satoshi text-white  text-sm 3xl:text-2xl 4xl:text-4xl xl:text-base">
+                                    <h3 class="font-satoshi text-white  text-sm 3xl:text-xl 4xl:text-4xl xl:text-base">
                                         Comprehensive Planning</h3>
                                     <ul
-                                        class="text-white font-satoshi text-[10px] xl:text-sm list-disc ml-4 3xl:text-xl 4xl:text-3xl 3xl:space-y-1">
+                                        class="text-white font-satoshi text-[10px] xl:text-sm list-disc ml-4 3xl:text-lg 4xl:text-3xl 3xl:space-y-1">
                                         <li class="font-thin"><span class="font-normal">Agronomist Analysis:</span> Developed work plans
                                             based on image analysis.</li>
                                         <li class="font-thin"><span class="font-normal">Centralized Dashboard:</span> Created a dashboard
@@ -1438,10 +1455,10 @@
                             <li class="flex items-start gap-2">
                                 <img src="assets/images/rocket.svg" alt="" class="w-6 3xl:w-8 4xl:w-12">
                                 <div class="">
-                                    <h3 class="font-satoshi  text-white text-sm 3xl:text-2xl 4xl:text-4xl xl:text-base">
+                                    <h3 class="font-satoshi  text-white text-sm 3xl:text-xl 4xl:text-4xl xl:text-base">
                                         Procurement and Expense Management</h3>
                                     <ul
-                                        class="text-white font-satoshi text-[10px] xl:text-sm list-disc ml-4 3xl:text-xl 4xl:text-3xl 3xl:space-y-1">
+                                        class="text-white font-satoshi text-[10px] xl:text-sm list-disc ml-4 3xl:text-lg 4xl:text-3xl 3xl:space-y-1">
                                         <li class="font-thin"><span class="font-normal">Procurement Plan Preparation:</span> Prepared
                                             plans based on seasonal needs.</li>
                                         <li class="font-thin"><span class="font-normal">Tracking and Expense Management:</span> The
@@ -1454,10 +1471,10 @@
                             <li class="flex items-start gap-2">
                                 <img src="assets/images/rocket.svg" alt="" class="w-6 3xl:w-8 4xl:w-12">
                                 <div class="">
-                                    <h3 class="font-satoshi  text-white text-sm 3xl:text-2xl 4xl:text-4xl xl:text-base">
+                                    <h3 class="font-satoshi  text-white text-sm 3xl:text-xl 4xl:text-4xl xl:text-base">
                                         Real-Time Alerts and Support</h3>
                                     <ul
-                                        class="text-white font-satoshi text-[10px] xl:text-sm list-disc ml-4 3xl:text-xl 4xl:text-3xl 3xl:space-y-1">
+                                        class="text-white font-satoshi text-[10px] xl:text-sm list-disc ml-4 3xl:text-lg 4xl:text-3xl 3xl:space-y-1">
                                         <li class="font-thin"><span class="font-normal">Set Up Real-Time Alerts:</span> Implemented
                                             real-time alerts and reminders.</li>
                                     </ul>
@@ -1474,7 +1491,8 @@
         </div>
 
     </section>
-    <section class="h-[100vh] bg-[url(assets/images/page7/Page7.webp)] bg-no-repeat bg-cover   w-[100vw] ">
+
+   <section class="swiper-slide h-screen bg-[url(assets/images/page7/Page7.webp)] bg-no-repeat bg-cover    ">
         <div class="px-8 xl:px-10 2xl:px-12 py-5">
             <div>
 
@@ -1492,32 +1510,32 @@
                     </div>
                 </div>
                 <div>
-                    <img src="assets/images/page12/Page12.webp" alt="" class="w-[500px] 3xl:w-[700px] 4xl:w-[900px] justify-self-end">
+                    <img src="assets/images/page12/Page12.webp" alt="" class="w-[500px] 3xl:w-[550px] 4xl:w-[900px] justify-self-end">
                 </div>
 
             </div>
 
         </div>
     </section>
-    <section class="h-[100vh] bg-[url(assets/images/page7/Page7.webp)] bg-cover  bg-no-repeat  w-[100vw] ">
+  <section class="swiper-slide h-screen bg-[url(assets/images/page7/Page7.webp)] bg-cover  bg-no-repeat   ">
 
         <div class="px-8 xl:px-10 2xl:px-12 py-5">
             <div class="border-r">
 
-                <div class="grid grid-cols-[60%_40%] pt-16 3xl:pt-32 ">
+                <div class="grid grid-cols-[60%_40%] pt-16 3xl:pt-20 ">
 
                     <div class="mt-6">
-                        <div class="text-5xl xl:text-6xl 3xl:text-7xl 4xl:text-8xl text-white text-opacity-80 font-satoshi">
+                        <div class="text-5xl xl:text-6xl 3xl:text-6xl 4xl:text-8xl text-white text-opacity-80 font-satoshi">
                             Some Of Our <br>
                             <div class="customers w-[58%]">Customers</div>
                         </div>
                         <div>
-                            <img src="assets/images/page13/Customers.svg" alt="" class="w-[490px] xl:w-[590px] 3xl:w-[900px] 4xl:w-[1200px]">
+                            <img src="assets/images/page13/Customers.svg" alt="" class="w-[490px] xl:w-[590px] 3xl:w-[700px] 4xl:w-[1200px]">
                         </div>
                     </div>
                     <div>
-                        <div class="-mt-10">
-                            <h1 class=" text-5xl xl:text-6xl 3xl:text-7xl 4xl:text-8xl flex gap-x-2 font-satoshi w-2/4 ">
+                        <div class="-mt-16">
+                            <h1 class=" text-5xl xl:text-6xl 3xl:text-6xl 4xl:text-8xl flex gap-x-2 font-satoshi w-2/4 ">
                                 <span class="key bg-clip-text text-transparent">Key</span> <span
                                     class="text-white text-opacity-50 bg-transparent">Verticals</span>
                             </h1>
@@ -1598,10 +1616,10 @@
         </div>
 
     </section>
-    <section class="h-[100vh] bg-[url(assets/images/page14/Page14.webp)] bg-no-repeat bg-cover bg-center   w-[100vw] ">
+    <section class="swiper-slide h-screen bg-[url(assets/images/page14/Page14.webp)] bg-no-repeat bg-cover bg-center   ">
         <div class="px-8 xl:px-10 2xl:px-12 py-5">
 
-            <div class="text-white font-satoshi text-2xl pt-28 xl:pt-52 2xl:pt-28 3xl:pt-80 4xl:pt-[450px] xl:text-4xl 3xl:text-5xl 4xl:text-6xl">
+            <div class="text-white font-satoshi text-2xl pt-16 xl:pt-52 2xl:pt-28 3xl:pt-40 4xl:pt-[450px] xl:text-4xl 3xl:text-5xl 4xl:text-6xl">
                 Our proven Service
                 <div class="text-6xl 3xl:text-7xl 4xl:text-9xl font-medium mt-2 lifecycle bg-clip-text text-transparent w-fit pr-10 ">
                     LifeCycle
@@ -1609,8 +1627,8 @@
             </div>
             <div class="grid grid-cols-5">
                 <div class="border-x-[1px] border-14-border mt-48 3xl:mt-64 4xl:mt-80">
-                    <h4 class="text-white bg-[#0674B7] text-2xl px-4 py-2 3xl:px-6 3xl:py-4  3xl:text-4xl 4xl:text-5xl">Engage</h4>
-                    <ul class="text-white list-image-[url(assets/images/red.svg)] px-6 py-4 text-sm xl:text-lg 3xl:text-2xl 4xl:text-3xl xl:space-y-2 3xl:space-y-4 4xl:space-y-6">
+                    <h4 class="text-white bg-[#0674B7] text-2xl px-4 py-2 3xl:px-6 3xl:py-4  3xl:text-3xl 4xl:text-5xl">Engage</h4>
+                    <ul class="text-white list-image-[url(assets/images/red.svg)] px-6 py-4 text-sm xl:text-lg 3xl:text-xl 4xl:text-3xl xl:space-y-2 3xl:space-y-4 4xl:space-y-6">
                         <li>Establish Initial Contact</li>
                         <li>Set the Context for Collaboration </li>
                         <li>Define the Business Case for Success</li>
@@ -1618,9 +1636,9 @@
 
                 </div>
                 <div class="border-x-[1px] border-14-border mt-36 3xl:mt-48 4xl:mt-60">
-                    <h4 class="text-white bg-[#0674B7] text-2xl px-4 py-2 3xl:px-6 3xl:py-4  3xl:text-4xl 4xl:text-5xl">Assess</h4>
+                    <h4 class="text-white bg-[#0674B7] text-2xl px-4 py-2 3xl:px-6 3xl:py-4  3xl:text-3xl 4xl:text-5xl">Assess</h4>
                     <ul
-                        class="text-white list-image-[url(assets/images/red.svg)] px-6 py-4 text-sm xl:text-lg 3xl:text-2xl 4xl:text-3xl xl:space-y-2 3xl:space-y-4 4xl:space-y-6">
+                        class="text-white list-image-[url(assets/images/red.svg)] px-6 py-4 text-sm xl:text-lg 3xl:text-xl 4xl:text-3xl xl:space-y-2 3xl:space-y-4 4xl:space-y-6">
                         <li>Collaborative Analysis of Current State</li>
                         <li>Evaluate Tech Trends and Industry Standards</li>
                         <li>Envision the Future State</li>
@@ -1628,9 +1646,9 @@
 
                 </div>
                 <div class="border-x-[1px] border-14-border mt-24 3xl:mt-32 4xl:mt-40">
-                    <h4 class="text-white bg-[#0674B7] text-2xl px-4 py-2 3xl:px-6 3xl:py-4  3xl:text-4xl 4xl:text-5xl">Align</h4>
+                    <h4 class="text-white bg-[#0674B7] text-2xl px-4 py-2 3xl:px-6 3xl:py-4  3xl:text-3xl 4xl:text-5xl">Align</h4>
                     <ul
-                        class="text-white list-image-[url(assets/images/red.svg)] px-6 py-4 text-sm xl:text-lg 3xl:text-2xl 4xl:text-3xl xl:space-y-2 3xl:space-y-4 4xl:space-y-6">
+                        class="text-white list-image-[url(assets/images/red.svg)] px-6 py-4 text-sm xl:text-lg 3xl:text-xl 4xl:text-3xl xl:space-y-2 3xl:space-y-4 4xl:space-y-6">
                         <li>Define Project Goals and Scope</li>
                         <li>Choose the Appropriate Service Model </li>
                         <li>Select an Agile Methodology to Follow</li>
@@ -1638,9 +1656,9 @@
 
                 </div>
                 <div class="border-x-[1px] border-14-border mt-12 3xl:mt-16 4xl:mt-20">
-                    <h4 class="text-white bg-[#0674B7] text-2xl px-4 py-2 3xl:px-6 3xl:py-4 3xl:text-4xl 4xl:text-5xl">Execute</h4>
+                    <h4 class="text-white bg-[#0674B7] text-2xl px-4 py-2 3xl:px-6 3xl:py-4 3xl:text-3xl 4xl:text-5xl">Execute</h4>
                     <ul
-                        class="text-white list-image-[url(assets/images/red.svg)] px-6 py-4 text-sm xl:text-lg 3xl:text-2xl 4xl:text-3xl xl:space-y-2 3xl:space-y-4 4xl:space-y-6">
+                        class="text-white list-image-[url(assets/images/red.svg)] px-6 py-4 text-sm xl:text-lg 3xl:text-xl 4xl:text-3xl xl:space-y-2 3xl:space-y-4 4xl:space-y-6">
                         <li>Implement Agility and Innovation</li>
                         <li>Foster a Culture of Trust and Transparency</li>
                         <li>Deliver Customized Solutions</li>
@@ -1648,9 +1666,9 @@
 
                 </div>
                 <div class="border-x-[1px] border-14-border">
-                    <h4 class="text-white bg-[#0674B7] text-2xl px-4 py-2 3xl:px-6 3xl:py-4  3xl:text-4xl 4xl:text-5xl">Refine</h4>
+                    <h4 class="text-white bg-[#0674B7] text-2xl px-4 py-2 3xl:px-6 3xl:py-4  3xl:text-3xl 4xl:text-5xl">Refine</h4>
                     <ul
-                        class="text-white list-image-[url(assets/images/red.svg)] px-6 py-4 text-sm xl:text-lg 3xl:text-2xl 4xl:text-3xl xl:space-y-2 3xl:space-y-4 4xl:space-y-6">
+                        class="text-white list-image-[url(assets/images/red.svg)] px-6 py-4 text-sm xl:text-lg 3xl:text-xl 4xl:text-3xl xl:space-y-2 3xl:space-y-4 4xl:space-y-6">
                         <li>Analyze Iteration Results and Feedback</li>
                         <li>Adapt to Changes and New Insights </li>
                         <li>Continuously Improve Processes and Outcomes</li>
@@ -1663,8 +1681,8 @@
         </div>
 
     </section>
-    <section class="h-[100vh] bg-[url(assets/images/page7/Page7.webp)] bg-no-repeat bg-cover   w-[100vw] ">
-        <div class="px-8 xl:px-10 2xl:px-12 pt-20 xl:pt-28 3xl:pt-72">
+   <section class="swiper-slide h-screen bg-[url(assets/images/page7/Page7.webp)] bg-no-repeat bg-cover    ">
+        <div class="px-8 xl:px-10 2xl:px-12 pt-20 xl:pt-28 3xl:pt-52">
 
             <div>
                 <div class="text-white font-satoshi text-[40px] 3xl:text-6xl 4xl:text-8xl text-center text-opacity-80 text-4xl">Service <span
@@ -1714,7 +1732,7 @@
 
                 </div>
                 <div class="absolute">
-                    <img src="assets/images/page15/Service.webp" alt="" class="w-40 xl:w-52 3xl:w-60 4xl:w-72">
+                    <img src="assets/images/page15/Service.webp" alt="" class="w-40 xl:w-52 3xl:w-64 4xl:w-72">
                 </div>
 
             </div>
@@ -1722,11 +1740,11 @@
         </div>
 
     </section>
-    <section class="h-[100vh]  w-[100vw] bg-[url(assets/images/page16/Page16.webp)] bg-cover bg-no-repeat ">
+    <section class="swiper-slide h-screen   bg-[url(assets/images/page16/Page16.webp)] bg-cover bg-no-repeat ">
         <div class="flex flex-col">
 
-        <div class="px-8 xl:px-10 2xl:px-12 py-5  bg-[url(assets/images/page16/Page16.webp)] bg-cover bg-no-repeat">
-            <div class="grid grid-cols-2 pt-16 gap-x-20 xl:pt-40 2xl:pt-20 3xl:pt-60 4xl:pt-96 xl:gap-24 3xl:gap-x-32 4xl:gap-x-48 ">
+        <div class="px-8 xl:px-10 2xl:px-12 py-10  bg-[url(assets/images/page16/Page16.webp)] bg-cover bg-no-repeat">
+            <div class="grid grid-cols-2 lg:pt-8 gap-x-20 xl:pt-40 2xl:pt-20 3xl:pt-60 4xl:pt-96 xl:gap-24 3xl:gap-x-32 4xl:gap-x-48 ">
                 <div>
 
 
@@ -1734,11 +1752,11 @@
                         <span class="contact bg-clip-text text-transparent">Contact</span><span
                             class="us text-transparent bg-clip-text "> Us</span>
                     </div>
-                    <div class="text-white font-satoshi text-lg mt-5 xl:text-2xl 3xl:text-4xl 4xl:text-5xl">
+                    <div class="text-white font-satoshi text-lg  xl:text-2xl 3xl:text-4xl 4xl:text-5xl">
                         We Design, Build & Scale Software for <br>
                         D2C Startups & Innovative Brands
                     </div>
-                    <div class="grid grid-cols-3 gap-5 mt-24 py-2 3xl:mt-40 4xl:mt-52 3xl:py-6 4xl:py-10">
+                    <div class="grid grid-cols-3 gap-5 mt-24 py-2 3xl:mt-40 4xl:mt-52 3xl:py-3 4xl:py-10">
                         <div class="font-satoshi bg-[#1A1A1A] text-white space-y-2 3xl:space-y-4 4xl:space-y-6 p-4 rounded-xl ">
                             <div class="flex flex-col">
                                 <h1 class="text-xl font-medium xl:text-2xl 3xl:text-4xl 4xl:text-6xl">22+</h1>
@@ -1773,7 +1791,7 @@
                 </div>
                 <div>
                     <div
-                        class="bg-white flex flex-col w-fit font-satoshi p-4 3xl:p-8 3xl:p-12 rounded-2xl justify-center items-center gap-y-4 4xl:gap-y-8 border-b-[10px] border-[#0674B7] text-xl">
+                        class="bg-white flex flex-col w-fit font-satoshi p-4 3xl:p-8 3xl:p-12 py-10 rounded-2xl justify-center items-center gap-y-4 4xl:gap-y-8 border-b-[10px] border-[#0674B7] text-xl">
                         <div>
                             <p class="text-sm xl:text-lg 3xl:text-2xl 4xl:text-4xl">Hyderabad</p>
                         </div>
@@ -1796,7 +1814,7 @@
                 </div>
             </div>
         </div>
-        <footer class="bg-[url(assets/images/page16/Footer.webp)] px-5 py-10 3xl:py-16 4xl:py-20 3xl:px-16 bg-cover  bg-no-repeat mt-10 w-full">
+        <footer class="bg-[url(assets/images/page16/Footer.webp)] px-5 py-10 3xl:py-10 4xl:py-20 3xl:px-16 bg-cover  bg-no-repeat mt-2 xl:mt-5 2xl:mt-5 ">
             <div class="flex justify-between items-center">
                 <div class="text-white text-4xl font-satoshi xl:text-5xl 3xl:text-6xl 4xl:text-8xl ">
                     THANK YOU
@@ -1813,10 +1831,14 @@
         </div>
 
 
-    </section>
+    </section> 
+    </div>
+    <div class="swiper-pagination"></div>
+    </div>
 
-    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
-    <script src="assets/JS/lenis.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/JS/swiper.js"></script>
 </body>
 
 </html>
